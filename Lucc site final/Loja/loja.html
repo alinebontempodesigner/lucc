@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home & Decor - Lucc Concept</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top theme-elegant">
+        <div class="container">
+            <a class="navbar-brand" href="/Lucc site copy/index.html">
+                <img src="Logo/Logo.png" alt="logotipo">
+            </a> 
+            <a class="navbar-brand fw-bold" href="/Lucc site copy/index.html">Lucc Concept</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/Lucc site copy/index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="loja.html">Home & Decor</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Lucc site copy/Empresas/empresas.html">Para empresas</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Lucc site copy/sobre.html">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Lucc site copy/contato.html">Contato</a></li>
+      </ul>
+      <div class="ms-lg-3 d-flex align-items-center">
+  <button id="btnCarrinho" class="btn-carrinho">
+    🛍️ <span id="contadorCarrinho">0</span>
+  </button>
+</div>
+    </div>
+  </div>
+
+
+</nav> 
+
+<header>
+<section class="hero">
+  
+  <div class="hero-content">
+    <!-- Banner com imagens à esquerda -->
+    
+    <div class="hero-text">
+      <h1>Transforme seu espaço com elegância e personalidade</h1>
+      <p>
+        Descubra <strong>peças autorais</strong> que despertam emoções e contam histórias. 
+        Na sua primeira compra, ganhe <strong>10% de desconto</strong> com o cupom <span class="cupom">10OFF</span> — 
+        porque seu ambiente merece exclusividade desde o primeiro detalhe.
+      </p>
+      <a class="btn-destaque" href="#loja">Usar meu cupom agora</a>
+    </div>
+  </div>
+</section>
+</header>
+
+<section class="filtros">
+  <div class="filtro-container">
+    <!-- Busca -->
+    <div class="filtro-item">
+      <label for="busca">Buscar produto</label>
+      <input type="text" id="busca" placeholder="Digite o nome do produto...">
+    </div>
+
+    <!-- Tipo de Produto -->
+    <div class="filtro-item">
+      <label for="tipo">Tipo</label>
+      <select id="tipo">
+        <option value="">Todos</option>
+        <option value="difusores">Difusores</option>
+        <option value="home-spray">Home Spray</option>
+        <option value="obras">Obras de Arte</option>
+        <option value="colecao">Coleção</option>
+      </select>
+    </div>
+
+    <!-- Quantidade -->
+    <div class="filtro-item">
+      <label for="quantidade">Quantidade</label>
+      <select id="quantidade">
+        <option value="">Todos</option>
+        <option value="kits">Kits</option>
+        <option value="peca-unica">Peça Única</option>
+      </select>
+    </div>
+
+    <!-- Faixa de Preço -->
+    <div class="filtro-item faixa-preco">
+      <label>Preço</label>
+      <input type="range" min="50" max="1000" step="10" value="500" id="preco">
+      <span id="valor-preco">Até R$ 500</span>
+    </div>
+
+    <!-- Ordenação -->
+    <div class="filtro-item">
+      <label for="ordenar">Ordenar por</label>
+      <select id="ordenar">
+        <option value="relevantes">Mais relevantes</option>
+        <option value="novos">Mais novos</option>
+        <option value="maior-preco">Maior preço</option>
+        <option value="menor-preco">Menor preço</option>
+      </select>
+    </div>
+
+    <!-- Botão Aplicar -->
+    <div class="filtro-item aplicar">
+      <button class="btn-aplicar">Aplicar filtros</button>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="loja" class="produtos">
+  <h2>Nossas Novidades</h2>
+  <div id="grid-produtos" class="grid-produtos"></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<footer id="footer" class="footer text-light footer-elegant pt-5 pb-3" role="contentinfo">
+  <div class="container">
+    <div class="row text-center text-md-start g-4">
+
+      <!-- Coluna 1 - Redes Sociais -->
+      <div class="col-md-3">
+        <h5 class="footer__heading mb-3">Redes sociais</h5>
+        <ul class="list-unstyled footer__links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 2 - Formas de Pagamento -->
+      <div class="col-md-3">
+        <h5 class="footer__heading mb-3">Formas de pagamento</h5>
+        <ul class="list-unstyled footer__links">
+          <li><a href="#">Pix</a></li>
+          <li><a href="#">Cartões</a></li>
+          <li><a href="#">Transferência</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3 - Menu -->
+      <div class="col-md-3">
+        <h5 class="footer__heading mb-3">Menu</h5>
+        <ul class="list-unstyled footer__links">
+           <li><a href="/Lucc site copy/index.html">Início</a></li>
+          <li><a href="loja.html">Home &amp; Decor</a></li>
+          <li><a href="/Lucc site copy/Empresas/empresas.html">Para empresas</a></li>
+          <li><a href="/Lucc site copy/sobre.html">Sobre</a></li>
+          <li><a href="/Lucc site copy/contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 4 - Políticas -->
+      <div class="col-md-3">
+        <h5 class="footer__heading mb-3">Políticas</h5>
+        <ul class="list-unstyled footer__links">
+          <li><a href="politica-privacidade.html">Privacidade</a></li>
+          <li><a href="trocas-devolucoes.html">Trocas &amp; Devoluções</a></li>
+          <li><a href="termos-uso.html">Termos de Uso</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Linha inferior -->
+  <div class="footer__bottom text-center mt-4 py-3">
+    <p class="mb-0">© <span id="year">2025</span> Lucc Concept. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+
+   
+
+
+
+
+   <!-- ======================================= -->
+<!-- 🛍️ Modal Carrinho -->
+<!-- ======================================= -->
+<div class="modal fade" id="modalCarrinho" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4 rounded-4 shadow-lg">
+      <div class="modal-header border-0">
+        <h2 class="modal-title fs-4">Seu Carrinho</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <div id="itensCarrinho"></div>
+        <p id="totalCarrinho" class="fw-semibold mt-3"></p>
+      </div>
+      <div class="modal-footer border-0">
+        <button id="finalizarCompra" class="btn btn-dark w-100 rounded-3 py-2">
+          Finalizar Compra
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🖼️ Modal Descrição do Produto -->
+<div class="modal fade" id="modalProduto" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4 rounded-4 shadow-lg">
+      <div class="modal-header border-0">
+        <h2 id="modalTitulo" class="modal-title fs-4 fw-bold"></h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+
+      <!-- NOVO LAYOUT: GRID (img + texto) -->
+      <div class="modal-body produto-modal">
+        <img id="modalImagem" src="" alt="" class="modal-img">
+        <div class="modal-copy">
+          <div id="modalDescricao"></div>   <!-- era <p id="modalDescricao"></p> -->
+          <p id="modalPreco" class="fs-5 fw-semibold text-secondary mt-2"></p>
+          <button id="modalComprar" class="btn btn-dark w-100 rounded-3 py-2">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ======================================= -->
+<!-- 💳 Modal Checkout / Pagamento -->
+<!-- ======================================= -->
+<div class="modal fade" id="modalCheckout" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4 rounded-4 shadow-lg">
+      <div class="modal-header border-0">
+        <h2 class="modal-title fs-4">Finalizar Compra</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <div id="resumoCheckout" class="resumo-checkout mb-3"></div>
+        <form id="formCheckout" class="form-checkout">
+          <div class="mb-3">
+            <label class="form-label">Nome completo</label>
+            <input type="text" id="nomeCliente" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">E-mail</label>
+            <input type="email" id="emailCliente" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Forma de pagamento</label>
+            <select id="pagamento" class="form-select">
+              <option value="pix">Pix</option>
+              <option value="cartao">Cartão de crédito</option>
+              <option value="transferencia">Transferência</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-dark w-100 py-2 rounded-3 fw-semibold">
+            Confirmar Pedido
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================================= -->
+<!-- ✨ Modal de Confirmação / Agradecimento -->
+<!-- ======================================= -->
+<div class="modal fade" id="modalConfirmacao" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4 rounded-4 shadow-lg">
+      <div class="modal-header border-0">
+        <h2 class="modal-title text-success fs-4 fw-bold">✨ Pedido Confirmado</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <div class="check-wrapper mb-3">
+          <div class="checkmark"></div>
+        </div>
+        <p>Obrigada por escolher a <strong>Lucc Concept</strong>.</p>
+        <p>Seu número de pedido é:</p>
+        <h3 id="numeroPedido" class="fs-5 fw-semibold"></h3>
+        <div id="resumoConfirmacao" class="text-start mt-3 border-top pt-2 small"></div>
+        <p class="agradecimento mt-4 text-secondary fw-semibold">
+          Em breve você receberá um e-mail com os detalhes da sua compra.
+        </p>
+        <a id="whatsPedido" class="btn btn-success w-100 mt-3 rounded-3 fw-semibold" target="_blank">
+          📱 Acompanhar Pedido pelo WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="java.js"></script>
+
+
+</body>
+</html>
