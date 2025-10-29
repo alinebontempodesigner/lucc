@@ -351,42 +351,20 @@ renderProdutos();
 // 🛍️ CONTROLE DE MODAIS LUCC CONCEPT
 // ================================
 
-// Pegue os elementos (se existirem)
-const elModalProduto      = document.getElementById('modalProduto');
-const elModalCarrinho     = document.getElementById('modalCarrinho');
-const elModalCheckout     = document.getElementById('modalCheckout');
-const elModalConfirmacao  = document.getElementById('modalConfirmacao');
-
-// Instâncias seguras (só criam se existir no DOM)
-const modalProduto     = elModalProduto     ? new bootstrap.Modal(elModalProduto)     : null;
-const modalCarrinho    = elModalCarrinho    ? new bootstrap.Modal(elModalCarrinho)    : null;
-const modalCheckout    = elModalCheckout    ? new bootstrap.Modal(elModalCheckout)    : null;
-const modalConfirmacao = elModalConfirmacao ? new bootstrap.Modal(elModalConfirmacao) : null;
-
+// Instâncias do Bootstrap Modal
+const modalProduto = new bootstrap.Modal(document.getElementById('modalProduto'));
+const modalCarrinho = new bootstrap.Modal(document.getElementById('modalCarrinho'));
+const modalCheckout = new bootstrap.Modal(document.getElementById('modalCheckout'));
+const modalConfirmacao = new bootstrap.Modal(document.getElementById('modalConfirmacao'));
 
 let produtoAtual = null;
 
 document.addEventListener('click', (e) => {
   const card = e.target.closest('.produto-card');
-  if (!card || e.target.classList.contains('btn-comprar')) return;
-
-  const nome = card.querySelector('h3')?.textContent?.trim();
-  const produto = produtos.find(p => p.nome === nome);
-  if (!produto || !elModalProduto) return;
-
-  const img = document.getElementById('modalImagem');
-  const tit = document.getElementById('modalTitulo');
-  const desc = document.getElementById('modalDescricao');
-  const preco = document.getElementById('modalPreco');
-
-  if (img)   { img.src = produto.imagem || produto.capa || ''; img.alt = produto.nome; }
-  if (tit)   tit.textContent = produto.nome || '';
-  if (desc)  desc.innerHTML  = produto.descricaoHtml || produto.descricao || '';
-  if (preco) preco.textContent = `R$ ${produto.preco.toFixed(2)}`;
-
-  modalProduto?.show();
-});
-
+  if (card && !e.target.classList.contains('btn-comprar')) {
+    const nome = card.querySelector('h3').textContent;
+    const produto = produtos.find((p) => p.nome === nome);
+    if (!produto) return;
 
     produtoAtual = produto;
 
@@ -418,7 +396,7 @@ document.addEventListener('click', (e) => {
     }
 
     // Exibe o modal
-    modalProduto?.show();
+    modalProduto.show();
   }
 });
 
@@ -449,8 +427,8 @@ btnCarrinho?.addEventListener('click', () => modalCarrinho.show());
 const finalizarCompraBtn = document.getElementById('finalizarCompra');
 finalizarCompraBtn?.addEventListener('click', () => {
   if (carrinho.length === 0) return;
-  modalCarrinho?.hide();
-  modalCheckout?.show();
+  modalCarrinho.hide();
+  modalCheckout.show();
 
   const resumo = document.getElementById('resumoCheckout');
   resumo.innerHTML = '';
@@ -463,8 +441,8 @@ finalizarCompraBtn?.addEventListener('click', () => {
 const formCheckout = document.getElementById('formCheckout');
 formCheckout?.addEventListener('submit', (e) => {
   e.preventDefault();
-  modalCheckout?.hide();
-  modalConfirmacao?.show();
+  modalCheckout.hide();
+  modalConfirmacao.show();
 
   const numPedido = Math.floor(Math.random() * 1000000);
   document.getElementById('numeroPedido').textContent = `#${numPedido}`;
@@ -511,24 +489,3 @@ document.getElementById('modalComprar')?.addEventListener('click', () => {
   }
 })();
 
-// 🧯 Airbag anti-trava de modal/backdrop
-function destravarModais() {
-  const algumAberto = document.querySelector('.modal.show');
-  if (!algumAberto) {
-    document.body.classList.remove('modal-open');
-    document.body.style.overflow = ''; // volta a rolar
-    document.querySelectorAll('.modal-backdrop').forEach(b => b.remove());
-  }
-}
-
-// Se algo der ruim, ESC limpa. Também limpa ao trocar de hash/rota.
-window.addEventListener('keydown', (e) => { if (e.key === 'Escape') destravarModais(); });
-window.addEventListener('hashchange', destravarModais);
-
-// Segurança extra: após qualquer clique grande na página, verifica.
-document.addEventListener('click', (e) => {
-  // Apenas quando clicar fora de um modal
-  if (!e.target.closest('.modal')) {
-    setTimeout(destravarModais, 50);
-  }
-});
