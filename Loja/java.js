@@ -15,8 +15,7 @@ const produtos = [
   tipo: "obras-fine-art",
   quantidade: "Edição Limitada",
   preco: 890,
-  imagem: 
-    "imagens/strawberry1.png",
+  imagem: "imagens/strawberry1.png",
   descricao: "Obra Fine Art exclusiva Lucc Concept — intensidade, cor e emoção em movimento.",
 
   descricaoHtml: `
@@ -269,16 +268,6 @@ const produtos = [
 
 ];
 
-// 🔄 Normaliza para múltiplas imagens 
-produtos.forEach(p => {
-  if (!p.imagens || !Array.isArray(p.imagens) || p.imagens.length === 0) {
-    p.imagens = p.imagem ? [p.imagem] : [];
-  }
-  // primeira imagem é a "capa" por padrão
-  p.capa = p.imagens[0] || p.imagem || '';
-});
-
-
 // -------------------------------
 // 🛒 Carrinho e renderização
 // -------------------------------
@@ -330,14 +319,13 @@ function renderProdutos(lista = produtos) {
     card.classList.add("produto-card");
 
     card.innerHTML = `
-  <img src="${produto.capa}" alt="${produto.nome}">
-  <div class="produto-info">
-    <h3>${produto.nome}</h3>
-    <p class="preco">R$ ${produto.preco.toFixed(2)}</p>
-    <button class="btn-comprar">Comprar</button>
-  </div>
-`;
-
+      <img src="${produto.imagem}" alt="${produto.nome}">
+      <div class="produto-info">
+        <h3>${produto.nome}</h3>
+        <p class="preco">R$ ${produto.preco.toFixed(2)}</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+    `;
 
     // Adiciona ao DOM
     grid.appendChild(card);
@@ -357,8 +345,7 @@ const modalCarrinho = new bootstrap.Modal(document.getElementById('modalCarrinho
 const modalCheckout = new bootstrap.Modal(document.getElementById('modalCheckout'));
 const modalConfirmacao = new bootstrap.Modal(document.getElementById('modalConfirmacao'));
 
-let produtoAtual = null;
-
+// === ABRIR MODAL DE PRODUTO ===
 document.addEventListener('click', (e) => {
   const card = e.target.closest('.produto-card');
   if (card && !e.target.classList.contains('btn-comprar')) {
@@ -366,40 +353,13 @@ document.addEventListener('click', (e) => {
     const produto = produtos.find((p) => p.nome === nome);
     if (!produto) return;
 
-    produtoAtual = produto;
-
-    // Título / Descrição / Preço
+    document.getElementById('modalImagem').src = produto.imagem;
     document.getElementById('modalTitulo').textContent = produto.nome;
     document.getElementById('modalDescricao').innerHTML = produto.descricaoHtml || produto.descricao || '';
     document.getElementById('modalPreco').textContent = `R$ ${produto.preco.toFixed(2)}`;
-
-    // Imagem principal
-    const imgMain = document.getElementById('modalImagem');
-    imgMain.src = produto.imagens[0] || produto.capa || '';
-    imgMain.alt = produto.nome;
-
-    // Thumbs
-    const thumbs = document.getElementById('modalThumbs');
-    if (thumbs) {
-      thumbs.innerHTML = '';
-      (produto.imagens || []).forEach((src, i) => {
-        const btn = document.createElement('button');
-        btn.innerHTML = `<img src="${src}" alt="${produto.nome} ${i+1}">`;
-        if (i === 0) btn.classList.add('active');
-        btn.addEventListener('click', () => {
-          imgMain.src = src;
-          [...thumbs.querySelectorAll('button')].forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-        });
-        thumbs.appendChild(btn);
-      });
-    }
-
-    // Exibe o modal
     modalProduto.show();
   }
 });
-
 
 // === BOTÃO "COMPRAR" NO CARD ===
 document.addEventListener('click', (e) => {
@@ -460,32 +420,3 @@ formCheckout?.addEventListener('submit', (e) => {
   carrinho.length = 0;
   atualizarCarrinho();
 });
-
-document.getElementById('modalComprar')?.addEventListener('click', () => {
-  if (!produtoAtual) return;
-  carrinho.push(produtoAtual);
-  atualizarCarrinho();
-
-  // Feedback no contador
-  const contador = document.getElementById('contadorCarrinho');
-  contador?.classList.add('contador-ativo');
-  setTimeout(() => contador?.classList.remove('contador-ativo'), 500);
-});
-
-// ⏰ Lançamento: exibe 1x por dia via localStorage
-(function initModalLancamento() {
-  const el = document.getElementById('modalLancamento');
-  if (!el) return;
-
-  const KEY = 'lc_lancamento_v1';
-  const now = Date.now();
-  const last = Number(localStorage.getItem(KEY) || 0);
-  const oneDay = 24 * 60 * 60 * 1000;
-
-  if (!last || (now - last) > oneDay) {
-    const lancamento = new bootstrap.Modal(el);
-    lancamento.show();
-    localStorage.setItem(KEY, String(now));
-  }
-})();
-
