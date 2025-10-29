@@ -9,6 +9,60 @@ const valorPreco = document.getElementById('valor-preco');
 
 // ====== PRODUTOS ======
 const produtos = [
+
+  {
+  nome: "Eco in the Cranberry Kisses",
+  tipo: "obras-fine-art",
+  quantidade: "Edição Limitada",
+  preco: 890,
+  imagem: "imagens/strawberry1.png",
+  descricao: "Obra Fine Art exclusiva Lucc Concept — intensidade, cor e emoção em movimento.",
+
+  descricaoHtml: `
+    <h3>Eco in the Cranberry Kisses — Fine Art por Lucc Concept</h3>
+    <p>
+      Uma explosão sensorial de cor e energia. <strong>Eco in the Cranberry Kisses</strong> é uma obra que traduz vibração e presença —
+      o instante em que a música, o corpo e a cor se tornam um só movimento.
+    </p>
+
+    <p>
+      Essa peça foi criada em edição limitada e produzida em <em>fine art printing</em> com pigmentos de alta durabilidade,
+      garantindo fidelidade de cor e textura por décadas. Cada detalhe reflete o estilo expressivo e vibrante característico da Lucc Concept.
+    </p>
+
+    <ul>
+      <li>Obra exclusiva em edição limitada (numerada e certificada)</li>
+      <li>Impressão Fine Art com pigmentos minerais de alta fidelidade</li>
+      <li>Papel museológico 100% algodão (Hahnemühle Photo Rag 308g)</li>
+      <li>Ideal para ambientes contemporâneos e galerias</li>
+      <li>Acompanha certificado de autenticidade</li>
+    </ul>
+
+    <h4>Ficha Técnica</h4>
+    <table class="tabela-ficha">
+      <tr><th>Obra</th><td>Eco in the Cranberry Kisses</td></tr>
+      <tr><th>Artista</th><td>Lucc Concept Studio</td></tr>
+      <tr><th>Categoria</th><td>Fine Art / Arte Contemporânea</td></tr>
+      <tr><th>Técnica</th><td>Impressão Fine Art com pigmentos minerais</td></tr>
+      <tr><th>Suporte</th><td>Papel 100% algodão – Hahnemühle</td></tr>
+      <tr><th>Tamanho</th><td>50 x 70 cm (outros tamanhos sob encomenda)</td></tr>
+      <tr><th>Acabamento</th><td>Sem moldura (opcional com moldura artesanal)</td></tr>
+      <tr><th>Edição</th><td>Limitada — 30 cópias numeradas</td></tr>
+      <tr><th>Origem</th><td>Feito no Brasil</td></tr>
+    </table>
+
+    <h4>Conceito Artístico</h4>
+    <p>
+      <strong>Eco in the Cranberry Kisses</strong> captura a energia de quem vive a arte com o corpo inteiro.
+      É um tributo à presença vibrante — aquele momento em que o som, o gesto e a cor se encontram e o ambiente respira junto.
+    </p>
+
+    <p class="seo">
+      Palavras-chave: obra fine art contemporânea, arte vibrante, edição limitada, impressão fine art, Lucc Concept, arte moderna brasileira, cranberry kisses, decoração sofisticada, arte de parede.
+    </p>
+  `
+},
+
  {
   nome: "Difusor Aromático Premium",
   tipo: "difusores",
