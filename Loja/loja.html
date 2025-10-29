@@ -221,21 +221,52 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
       </div>
 
-      <!-- NOVO LAYOUT: GRID (img + texto) -->
-      <div class="modal-body produto-modal">
-        <img id="modalImagem" src="" alt="" class="modal-img">
-        <div class="modal-copy">
-          <div id="modalDescricao"></div>   <!-- era <p id="modalDescricao"></p> -->
-          <p id="modalPreco" class="fs-5 fw-semibold text-secondary mt-2"></p>
-          <button id="modalComprar" class="btn btn-dark w-100 rounded-3 py-2">
-            Adicionar ao Carrinho
-          </button>
-        </div>
+      <!-- 🖼️ Modal Descrição do Produto  -->
+<div class="modal-body produto-modal">
+  <div class="modal-gallery">
+    <img id="modalImagem" src="" alt="" class="modal-img">
+    <div id="modalThumbs" class="modal-thumbs"></div>
+  </div>
+
+  <div class="modal-copy">
+    <div id="modalDescricao"></div>
+    <p id="modalPreco" class="fs-5 fw-semibold text-secondary mt-2"></p>
+    <button id="modalComprar" class="btn btn-dark w-100 rounded-3 py-2">
+      Adicionar ao Carrinho
+    </button>
+  </div>
+</div>
+
+<!-- ======================================= -->
+<!-- 🚀 Modal de Lançamento (Promo) -->
+<!-- ======================================= -->
+<div class="modal fade" id="modalLancamento" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-0 rounded-4 shadow-lg modal-lancamento">
+      <button type="button" class="btn-close lancamento-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+
+      <div class="lancamento-hero">
+        <div class="lancamento-badge">Lançamento</div>
+        <h2>Eco in the Cranberry Kisses</h2>
+        <p>Uma edição limitada para ambientes marcantes.</p>
       </div>
 
+      <div class="lancamento-body">
+        <ul class="lancamento-benefits">
+          <li>Fine Art com pigmentos minerais</li>
+          <li>Papel museológico 100% algodão</li>
+          <li>Edição numerada + certificado</li>
+        </ul>
+
+        <div class="lancamento-cta">
+          <a href="#loja" class="btn btn-dark w-100 rounded-3 py-2">Quero conhecer</a>
+          <small class="d-block text-center text-muted mt-2">Cupom de boas-vindas: <strong>10OFF</strong></small>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
 
 
 
