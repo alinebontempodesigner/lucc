@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 /* ================================
    LUXURY DARK B2B – Lucc Concept
    ================================ */
@@ -5,7 +7,7 @@
 body {
   background: radial-gradient(circle at 25% 10%, #2e2e2e, #0a0a0a 70%);
   color: #eee3d2;
-  font-family: "Inter", sans-serif;
+  font-family: 'raleway', sans-serif;
   overflow-x: hidden;
 }
 
@@ -32,6 +34,7 @@ body {
   color: #ddd0b6;
   font-size: 1.1rem;
   line-height: 1.6;
+  
 }
 
 .btn-padrao {
