@@ -432,7 +432,7 @@ p, li{font-family: "Raleway", "Helvetica" sans-serif;}
 
 #modalProduto .produto-modal{
   display:grid;
-  grid-template-columns:1.1fr 1.3fr;
+  grid-template-columns:1.1fr;
   gap:2rem;
   align-items:start;
 }
@@ -564,7 +564,83 @@ p, li{font-family: "Raleway", "Helvetica" sans-serif;}
 @media(max-width:768px){
   #modalProduto .produto-modal {
   display: grid;
-  grid-template-columns: 1.1fr 1.3fr;
+  grid-template-columns: 1.1fr;
   gap: 2.5rem;
 }
+}
+
+/* ---------- MODAL MOBILE (até 768px) ---------- */
+@media (max-width: 768px) {
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 1.5rem;
+    
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    
+  }
+
+  /* Imagem ocupa toda a largura do modal */
+  .modal-body img {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+
+  /* Botões centralizados logo abaixo da imagem */
+  .modal-body .carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .carousel-controls button {
+    background: linear-gradient(145deg, #f8f4ef, #f2e7d7);
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+  }
+
+  .carousel-controls button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(166,124,82,0.25);
+  }
+
+  /* Texto centralizado e dentro da largura do card */
+  .modal-body .descricao {
+    width: 100%;
+    max-width: 320px;
+    color: #2b1b15;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .modal-body .descricao h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #402d22;
+  }
+
+  .modal-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 }
