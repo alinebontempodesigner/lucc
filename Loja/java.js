@@ -11,54 +11,61 @@ const valorPreco = document.getElementById('valor-preco');
 const produtos = [
 
   {
-  nome: "Eco in the Cranberry Kisses",
-  tipo: "obras-fine-art",
-  quantidade: "Edição Limitada",
-  preco: 890,
-  imagem: "imagens/strawberry1.png",
-  descricao: "Obra Fine Art exclusiva Lucc Concept — intensidade, cor e emoção em movimento.",
-
+  nome: "Eco Strawberry – Fine Art Sensitiva",
+  tipo: "obras",
+  quantidade: "peca-unica",
+  preco: 987,
+  imagens: [
+    "imagens/strawberry1.png",
+    "imagens/strawberry2.png",
+    "imagens/strawberry3.png"
+  ],
+  descricao: "Obra fine art inspirada na doçura ácida do morango, com vibe feminina, sensual e contemporânea.",
   descricaoHtml: `
-    <h3>Eco in the Cranberry Kisses — Fine Art por Lucc Concept</h3>
+    <h3>Eco Strawberry – Arte para ambientes que falam</h3>
     <p>
-      Uma explosão sensorial de cor e energia. <strong>Eco in the Cranberry Kisses</strong> é uma obra que traduz vibração e presença —
-      o instante em que a música, o corpo e a cor se tornam um só movimento.
+      “Eco Strawberry” nasce daquele contraste que você ama: <strong>doce, mas não boba</strong>. 
+      É uma obra pensada para espaços que misturam feminilidade, design e um toque de provocação. 
+      Ideal para salas conceituais, estúdios de beleza, lojas autorais e home offices de mulheres criativas.
     </p>
 
     <p>
-      Essa peça foi criada em edição limitada e produzida em <em>fine art printing</em> com pigmentos de alta durabilidade,
-      garantindo fidelidade de cor e textura por décadas. Cada detalhe reflete o estilo expressivo e vibrante característico da Lucc Concept.
+      A estética é <em>glam, mas natural</em>: fundo texturizado, destaque para o vermelho-morango e nuances de nude que 
+      conversam com paletas neutras. É daquelas peças que você coloca na parede e o ambiente fica com cara de 
+      <strong>editorial de revista</strong>.
     </p>
 
+    <h4>Por que essa obra funciona no décor?</h4>
     <ul>
-      <li>Obra exclusiva em edição limitada (numerada e certificada)</li>
-      <li>Impressão Fine Art com pigmentos minerais de alta fidelidade</li>
-      <li>Papel museológico 100% algodão (Hahnemühle Photo Rag 308g)</li>
-      <li>Ideal para ambientes contemporâneos e galerias</li>
-      <li>Acompanha certificado de autenticidade</li>
+      <li>Composição vertical pensada para painéis, cantos de leitura e entrada de casa;</li>
+      <li>Paleta que combina com madeira, dourado, preto e off white;</li>
+      <li>Arte digital em alta resolução pronta para impressão Fine Art;</li>
+      <li>Conceito feminino sem ser infantil — sensualidade adulta, elegante.</li>
     </ul>
 
     <h4>Ficha Técnica</h4>
     <table class="tabela-ficha">
-      <tr><th>Obra</th><td>Eco in the Cranberry Kisses</td></tr>
-      <tr><th>Artista</th><td>Lucc Concept Studio</td></tr>
-      <tr><th>Categoria</th><td>Fine Art / Arte Contemporânea</td></tr>
-      <tr><th>Técnica</th><td>Impressão Fine Art com pigmentos minerais</td></tr>
-      <tr><th>Suporte</th><td>Papel 100% algodão – Hahnemühle</td></tr>
-      <tr><th>Tamanho</th><td>50 x 70 cm (outros tamanhos sob encomenda)</td></tr>
-      <tr><th>Acabamento</th><td>Sem moldura (opcional com moldura artesanal)</td></tr>
-      <tr><th>Edição</th><td>Limitada — 30 cópias numeradas</td></tr>
-      <tr><th>Origem</th><td>Feito no Brasil</td></tr>
+      <tr><th>Título</th><td>Eco Strawberry</td></tr>
+      <tr><th>Artista</th><td>Aline Bontempo</td></tr>
+      <tr><th>Coleção</th><td>Sweet Icons</td></tr>
+      <tr><th>Técnica</th><td>Ilustração digital autoral (Clip Studio Paint)</td></tr>
+      <tr><th>Impressão indicada</th><td>Fine Art em papel 310g ou canvas premium</td></tr>
+      <tr><th>Tamanhos sugeridos</th><td>30x40 • 50x70 • 70x100 cm</td></tr>
+      <tr><th>Acabamento</th><td>Com ou sem moldura; opção com vidro antirreflexo</td></tr>
+      <tr><th>Produção</th><td>Sob demanda</td></tr>
+      <tr><th>Certificado</th><td>Acompanha certificado de autenticidade</td></tr>
     </table>
 
-    <h4>Conceito Artístico</h4>
+    <h4>Para quem é</h4>
     <p>
-      <strong>Eco in the Cranberry Kisses</strong> captura a energia de quem vive a arte com o corpo inteiro.
-      É um tributo à presença vibrante — aquele momento em que o som, o gesto e a cor se encontram e o ambiente respira junto.
+      Para quem quer <strong>uma peça feminina sem clichê</strong>, que converse com perfume, estética e sensorialidade.
+      Perfeita para ambientes Instagramáveis, cantinho de autocuidado, loja de aromatizadores, estúdio de design e
+      ambientes com conceito “<em>arte + aroma + experiência</em>”.
     </p>
 
     <p class="seo">
-      Palavras-chave: obra fine art contemporânea, arte vibrante, edição limitada, impressão fine art, Lucc Concept, arte moderna brasileira, cranberry kisses, decoração sofisticada, arte de parede.
+      Palavras-chave: obra fine art feminina, arte morango, quadro decorativo luxo, arte digital autoral,
+      decoração sensorial, Lucc Concept, arte para ambientes marcantes.
     </p>
   `
 },
@@ -68,7 +75,7 @@ const produtos = [
   tipo: "difusores",
   quantidade: "Kits",
   preco: 197,
-  imagem: "imagens/mockupdifusorestilo1.png",
+  imagens: ["imagens/mockupdifusorestilo1.png"],
   descricao: "Perfumes artesanais Lucc Concept — sofisticação, serenidade e design artesanal em um só gesto.",
 
   descricaoHtml: `
@@ -117,7 +124,7 @@ const produtos = [
   tipo: "aromatizadores",
   quantidade: "kits",
   preco: 219,
-  imagem: "imagens/kitdifusorhomeestilo2.png",
+  imagens: ["imagens/kitdifusorhomeestilo2.png"],
   descricao: "Kit aromático premium Lucc Concept — difusor com varetas e spray com fragrância autoral para transformar seus espaços.",
 
   descricaoHtml: `
@@ -171,7 +178,7 @@ const produtos = [
   tipo: "obras",
   quantidade: "peca-unica",
   preco: 897,
-  imagem: "imagens/mockuploira1.png",
+  imagens: ["imagens/mockuploira1.png"],
   descricao: "Versão curta para listagem/cartões.",
   descricaoHtml: `
     <h3>“Silêncio Dourado” — Série Glam Essence</h3>
@@ -206,7 +213,10 @@ const produtos = [
   tipo: "colecoes",
   quantidade: "kit-completo",
   preco: 2397,
-  imagem: "imagens/colecaourbanokit.png",
+  imagens: ["imagens/colecaourbanokit.png",
+    "imagens/newyork.png",
+    "imagens/london.png"
+  ],
   descricao: "Duas obras da série Urbano em moldura preta + kit difusor e spray com logo Lucc Concept — elegância minimalista para ambientes sofisticados.",
 
   descricaoHtml: `
@@ -319,7 +329,8 @@ function renderProdutos(lista = produtos) {
     card.classList.add("produto-card");
 
     card.innerHTML = `
-      <img src="${produto.imagem}" alt="${produto.nome}">
+      <img src="${produto.imagens[0]}" alt="${produto.nome}">
+
       <div class="produto-info">
         <h3>${produto.nome}</h3>
         <p class="preco">R$ ${produto.preco.toFixed(2)}</p>
@@ -345,7 +356,6 @@ const modalCarrinho = new bootstrap.Modal(document.getElementById('modalCarrinho
 const modalCheckout = new bootstrap.Modal(document.getElementById('modalCheckout'));
 const modalConfirmacao = new bootstrap.Modal(document.getElementById('modalConfirmacao'));
 
-// === ABRIR MODAL DE PRODUTO ===
 document.addEventListener('click', (e) => {
   const card = e.target.closest('.produto-card');
   if (card && !e.target.classList.contains('btn-comprar')) {
@@ -353,13 +363,52 @@ document.addEventListener('click', (e) => {
     const produto = produtos.find((p) => p.nome === nome);
     if (!produto) return;
 
-    document.getElementById('modalImagem').src = produto.imagem;
+    const modalImagem = document.getElementById('modalImagem');
+    let imagemIndex = 0;
+    modalImagem.src = produto.imagens[0];
+
+    // === Remove setas antigas (caso já existam) ===
+    const oldControls = document.querySelector('.carousel-controls');
+    if (oldControls) oldControls.remove();
+
+    // === Cria container das setas DENTRO do mesmo bloco da imagem ===
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('carousel-wrapper');
+    modalImagem.parentNode.insertBefore(wrapper, modalImagem);
+    wrapper.appendChild(modalImagem);
+
+    const controls = document.createElement('div');
+    controls.classList.add('carousel-controls');
+    controls.innerHTML = `
+      <button id="prevImg">←</button>
+      <button id="nextImg">→</button>
+    `;
+    wrapper.appendChild(controls);
+
+    // === Transição suave (fade) ===
+    modalImagem.style.transition = "opacity 0.4s ease";
+
+    function trocarImagem(novoIndex) {
+      modalImagem.style.opacity = 0;
+      setTimeout(() => {
+        imagemIndex = (novoIndex + produto.imagens.length) % produto.imagens.length;
+        modalImagem.src = produto.imagens[imagemIndex];
+        modalImagem.style.opacity = 1;
+      }, 300);
+    }
+
+    document.getElementById('prevImg').onclick = () => trocarImagem(imagemIndex - 1);
+    document.getElementById('nextImg').onclick = () => trocarImagem(imagemIndex + 1);
+
+    // === Preenche infos ===
     document.getElementById('modalTitulo').textContent = produto.nome;
     document.getElementById('modalDescricao').innerHTML = produto.descricaoHtml || produto.descricao || '';
     document.getElementById('modalPreco').textContent = `R$ ${produto.preco.toFixed(2)}`;
     modalProduto.show();
   }
 });
+
+
 
 // === BOTÃO "COMPRAR" NO CARD ===
 document.addEventListener('click', (e) => {

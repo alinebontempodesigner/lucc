@@ -1,301 +1,697 @@
-@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-
-:root{
-     --color-principal: #2e2e2e;
-  --color-secundaria: #a67c52;
-  --color-neutra: #fffff0;
-  --color-outra: #ffffff;
-  --color-preto: #000000;
-
-  --font-title: 'GFS Didot', serif;
-  --font-body: 'Raleway', sans-serif;
-
-  --radius: 8px;
-  --shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-:root{
-    --bs-btn-color: #fffff0;
-    --bs-btn-bg: #2e2e2e;
-    --bs-btn-border-color: #2e2e2e;
-    --bs-btn-hover-color: #fffff0;
-    --bs-btn-hover-bg: #a67c52;
-    --bs-btn-hover-border-color: #a67c52;
-    --bs-btn-focus-shadow-rgb: 49, 132, 253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #2e2e2e;
-    --bs-btn-active-border-color: #2e2e2e;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fffff0;
-    --bs-btn-disabled-bg: #2e2e2e;
-    --bs-btn-disabled-border-color: #2e2e2e;
-}
-.btn-primary{
-    --bs-btn-color: #fffff0;
-    --bs-btn-bg: #2e2e2e;
-    --bs-btn-border-color: #2e2e2e;
-    --bs-btn-hover-color: #fffff0;
-    --bs-btn-hover-bg: #a67c52;
-    --bs-btn-hover-border-color: #a67c52;
-    --bs-btn-focus-shadow-rgb: 49, 132, 253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #2e2e2e;
-    --bs-btn-active-border-color: #2e2e2e;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fffff0;
-    --bs-btn-disabled-bg: #2e2e2e;
-    --bs-btn-disabled-border-color: #2e2e2e;
-}
-/* ==============================
-   LUXO CONTEMPORÂNEO v2 - Lucc Concept
-   ============================== */
+/* ================================
+   LUXURY DARK B2B – Lucc Concept
+   ================================ */
 
 body {
-  background: radial-gradient(circle at 30% 20%, #2e2e2e, #0f0f0f 80%);
-  color: #eae6dc;
-  font-family: var(--font-body);
+  background: radial-gradient(circle at 25% 10%, #2e2e2e, #0a0a0a 70%);
+  color: #eee3d2;
+  font-family: "Inter", sans-serif;
   overflow-x: hidden;
 }
 
-/* ===== HERO ===== */
-header.section {
-  background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(46,46,46,0.85)),
-              url('img/bg-luxury.jpg') center/cover no-repeat;
-  color: var(--color-neutra);
+/* ---------- Hero Section ---------- */
+.hero-luxo {
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.65), rgba(166, 124, 82, 0.15));
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 6rem 1.5rem 5rem;
   text-align: center;
-  padding: 8rem 1.5rem 7rem;
-  position: relative;
-  overflow: hidden;
 }
 
-header.section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 40% 30%, rgba(255,255,255,0.05), transparent 70%);
-}
-
-header.section h1 {
-  font-family: var(--font-title);
+.hero-luxo h1 {
+  font-family: "GFS Didot", serif;
   font-size: 2.8rem;
-  letter-spacing: 1px;
-  color: #f4f0e5;
-  text-transform: none;
-  animation: fadeDown 1.2s ease forwards;
-}
-header.section p {
-  color: #d4c7a8;
-  max-width: 700px;
-  margin: 1rem auto;
-  line-height: 1.7;
-  font-size: 1.05rem;
-  animation: fadeUp 1.4s ease forwards;
+  max-width: 780px;
+  margin: 0 auto 1.2rem;
+  color: #fff;
 }
 
-@keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* ===== SEÇÕES ===== */
-section {
-  padding: 6rem 2rem;
-  position: relative;
-  animation: slideFade 1s ease both;
-}
-section:nth-of-type(even) {
-  background: rgba(255,255,255,0.02);
-}
-@keyframes slideFade {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+.hero-luxo p {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  color: #ddd0b6;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-h2, h3 {
-  font-family: var(--font-title);
-  color: #d9b98f;
+.btn-padrao {
+  background: linear-gradient(90deg, #a67c52, #e6cc9f);
+  color: #0f0f0f;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.9rem 2.2rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-padrao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(230, 204, 159, 0.4);
+}
+
+/* ---------- Section Titles ---------- */
+section h2 {
   text-align: center;
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.5px;
+  font-family: "GFS Didot", serif;
+  font-size: 2.2rem;
+  color: #f3e9d6;
+  margin-bottom: 1rem;
 }
 
-/* ===== PLANOS ===== */
+section p {
+  text-align: center;
+  color: #d7cdb9;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
+/* ---------- Planos Corporativos ---------- */
 .planos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
+  padding: 0 2rem 4rem;
 }
+
 .plano-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: var(--radius-card);
-  padding: var(--spacing-lg);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(10px);
-  transition: all 0.4s ease;
+  border-radius: 18px;
+  padding: 2.5rem 2rem;
+  transition: transform 0.3s, border 0.3s, box-shadow 0.3s;
   text-align: center;
 }
+
 .plano-card:hover {
-  transform: translateY(-6px);
-  border-color: #a67c52;
-  box-shadow: 0 10px 30px rgba(166,124,82,0.25);
+  transform: translateY(-4px);
+  border: 1px solid rgba(166, 124, 82, 0.5);
+  box-shadow: 0 8px 22px rgba(166, 124, 82, 0.2);
 }
+
 .plano-card h3 {
-  color: #eae6dc;
-  margin-bottom: 1rem;
+  color: #fff;
+  font-family: "GFS Didot", serif;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
 }
+
 .plano-card .valor {
-  color: #d4b88f;
-  font-size: 1.1rem;
+  color: #e6cc9f;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+
 .plano-card ul {
   list-style: none;
   padding: 0;
   margin: 0 0 1.5rem;
-  line-height: 1.6;
-  color: #dcd8ce;
-}
-.plano-card li::before {
-  content: "• ";
-  color: #a67c52;
 }
 
-/* ===== PROCESSO ===== */
-.processo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.plano-card ul li {
+  color: #d9d1c0;
+  margin: 0.6rem 0;
+}
+
+.plano-card p {
+  color: #c4b89e;
+  font-size: 0.95rem;
+}
+
+.plano-card.destaque {
+  border: 1px solid rgba(166, 124, 82, 0.6);
+  box-shadow: 0 10px 28px rgba(166, 124, 82, 0.25);
+}
+
+/* ---------- Processo Horizontal (Luxury Dark B2B) ---------- */
+.processo {
+  padding: 6rem 2rem;
   text-align: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
+  background: transparent;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+.processo h2 {
+  font-family: "GFS Didot", serif;
+  color: #e6cc9f;
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+}
+
+.processo-linha {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5rem;
+  overflow-x: auto;
+  padding-bottom: 2rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(166,124,82,0.4) transparent;
+}
+
+/* Linha dourada */
+.processo-linha::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(166,124,82,0.6), rgba(230,204,159,0.3));
+  z-index: 1;
+}
+
+/* Cada passo */
 .passo {
-  background: rgba(255,255,255,0.05);
-  border-radius: 14px;
-  padding: 2rem 1rem;
-  transition: transform 0.3s ease;
+  flex: 1 1 250px;
+  position: relative;
+  text-align: left;
+  z-index: 2;
 }
-.passo:hover { transform: translateY(-5px); }
+
 .passo span {
-  display: inline-block;
-  background: linear-gradient(135deg, #a67c52, #d4b88f);
-  color: #1a1a1a;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  line-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 30% 30%, #e6cc9f, #a67c52);
+  color: #0a0a0a;
   font-weight: 700;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 0 14px rgba(166,124,82,0.25);
+}
+
+.passo h3 {
+  font-family: "GFS Didot", serif;
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.passo p {
+  color: #d7cdb9;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 280px;
+}
+
+/* Responsivo: quebra em coluna no mobile */
+@media (max-width: 900px) {
+  .processo-linha {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  .processo-linha::before {
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 26px;
+    background: linear-gradient(180deg, rgba(166,124,82,0.6), rgba(230,204,159,0.3));
+  }
+  .passo {
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .passo span {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+  .passo p {
+    max-width: none;
+  }
+}
+
+/* ---------- Prova Social ---------- */
+.prova-social {
+  text-align: center;
+  padding: 5rem 2rem 4rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.prova-social h2 {
+  font-family: "GFS Didot", serif;
+  color: #e6cc9f;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.prova-social p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #d7cdb9;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* ---------- Proposta de Valor ---------- */
+.proposta-valor {
+  padding: 5rem 2rem 4rem;
+  background: transparent;
+  text-align: center;
+}
+
+.proposta-valor h2 {
+  font-family: "GFS Didot", serif;
+  font-size: 2.2rem;
+  color: #f3e9d6;
+  margin-bottom: 2rem;
+}
+
+.proposta-valor .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.proposta-valor .col-md-4 {
+  flex: 1 1 300px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.proposta-valor .col-md-4:hover {
+  transform: translateY(-5px);
+  border-color: rgba(166, 124, 82, 0.5);
+  box-shadow: 0 8px 20px rgba(166, 124, 82, 0.2);
+}
+
+.proposta-valor h3 {
+  color: #e6cc9f;
+  font-family: "GFS Didot", serif;
+  font-size: 1.4rem;
   margin-bottom: 0.8rem;
 }
 
-/* ===== FORMULÁRIO ===== */
-.form-empresas {
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-}
-form input, form textarea {
-  width: 100%;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.2);
-  color: #fff;
-  border-radius: 8px;
-  padding: 0.8rem 1rem;
-  margin-bottom: 1rem;
-  transition: all 0.3s ease;
-}
-form input:focus, form textarea:focus {
-  border-color: #a67c52;
-  box-shadow: 0 0 10px rgba(166,124,82,0.4);
-  outline: none;
-}
-.btn-padrao {
-  background: linear-gradient(90deg, #a67c52, #d4b88f);
-  color: #1a1a1a;
-  font-weight: 700;
-  border-radius: 40px;
-  padding: 1rem 2.2rem;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.btn-padrao:hover {
-  transform: translateY(-3px);
-  filter: brightness(1.1);
-}
-
-/* ===== CASES ===== */
-.cases-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.8rem;
-  margin-top: 2rem;
-}
-.case {
-  background: rgba(255,255,255,0.04);
-  border-radius: 14px;
-  overflow: hidden;
-  transition: transform 0.4s ease;
-}
-.case:hover { transform: translateY(-5px) scale(1.02); }
-.case img {
-  width: 100%;
-  display: block;
-  opacity: 0.85;
-  transition: opacity 0.3s ease;
-}
-.case:hover img { opacity: 1; }
-.case p {
-  text-align: center;
-  padding: 1rem;
-  color: #d9b98f;
-  font-weight: 500;
-}
-
-/* ===== KIT CTA ===== */
-.kit {
-  text-align: center;
-  background: linear-gradient(90deg, rgba(166,124,82,0.15), rgba(255,255,255,0.05));
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
-.kit h2 { color: #f4f0e5; }
-.kit p {
-  color: #dcd8ce;
-  max-width: 600px;
-  margin: 1rem auto 2rem;
+.proposta-valor p {
+  color: #d7cdb9;
+  font-size: 0.97rem;
   line-height: 1.6;
 }
 
-/* ===== WHATS FIXO ===== */
-.whats-fixo {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  background: linear-gradient(135deg, #25D366, #128C7E);
-  color: #fff;
-  font-size: 1.6rem;
-  text-decoration: none;
-  border-radius: 50%;
-  width: 55px;
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
-  z-index: 999;
-  animation: pulseWhats 2s infinite;
+/* ---------- Título Planos ---------- */
+.planos-titulo {
+  text-align: center;
+  padding: 5rem 2rem 2rem;
 }
-@keyframes pulseWhats {
-  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37,211,102,0.4); }
-  70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37,211,102,0); }
-  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+
+.planos-titulo h2 {
+  font-family: "GFS Didot", serif;
+  color: #f3e9d6;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+/* ---------- CTA Final: "Marcas inesquecíveis" ---------- */
+.cta-sentir {
+  position: relative;
+  background: radial-gradient(circle at center, rgba(166,124,82,0.15), rgba(0,0,0,0.9) 80%);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  text-align: center;
+  padding: 7rem 2rem;
+  overflow: hidden;
+}
+
+.cta-sentir::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('imagens/bg-textura-dourada.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.cta-sentir h2 {
+  font-family: "GFS Didot", serif;
+  color: #e6cc9f;
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.3;
+}
+
+.cta-sentir p {
+  color: #d7cdb9;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto 2.8rem;
+}
+
+.cta-botao {
+  background: linear-gradient(90deg, #a67c52, #e6cc9f);
+  color: #0f0f0f;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 1rem 2.6rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 20px rgba(230, 204, 159, 0.25);
+}
+
+.cta-botao:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(230, 204, 159, 0.45);
+}
+
+/* ---------- Animação de entrada ---------- */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cta-content {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@media (max-width: 768px) {
+  .cta-sentir {
+    padding: 5rem 1.5rem;
+  }
+  .cta-sentir h2 {
+    font-size: 1.9rem;
+  }
+  .cta-sentir p {
+    font-size: 1rem;
+  }
+}
+
+/* ---------- CASES: Resultados Reais ---------- */
+.cases-section {
+  padding: 6rem 2rem;
+  background: radial-gradient(circle at 25% 10%, rgba(255,255,255,0.02), rgba(0,0,0,0.9) 85%);
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.cases-section h2 {
+  font-family: "GFS Didot", serif;
+  font-size: 2.4rem;
+  color: #e6cc9f;
+  margin-bottom: 1rem;
+}
+
+.cases-section .intro {
+  color: #d7cdb9;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 740px;
+  margin: 0 auto 4rem;
+}
+
+.cases-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+
+.case {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  gap: 2.5rem;
+  transition: transform 0.4s ease;
+}
+
+.case:hover {
+  transform: translateY(-6px);
+}
+
+.case-image {
+  flex: 1 1 420px;
+  overflow: hidden;
+  border-radius: 22px;
+  box-shadow: 0 0 35px rgba(166,124,82,0.25);
+}
+
+.case-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 22px;
+  transition: transform 0.6s ease;
+}
+
+.case:hover .case-image img {
+  transform: scale(1.05);
+}
+
+.case-text {
+  flex: 1 1 350px;
+  text-align: left;
+}
+
+.case-text h3 {
+  font-family: "GFS Didot", serif;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.case-text p {
+  color: #d7cdb9;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Alternância (caso adicione mais cases) */
+.case:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 900px) {
+  .cases-section {
+    padding: 5rem 1.5rem;
+  }
+
+  .case {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .case-text {
+    text-align: center;
+  }
+}
+/* ---------- GARANTIA ---------- */
+.garantia-section {
+  position: relative;
+  padding: 6rem 2rem;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.03), rgba(0,0,0,0.95) 80%);
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  overflow: hidden;
+}
+
+.garantia-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(166,124,82,0.08), transparent 70%);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.garantia-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.selo-garantia {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 14px rgba(166,124,82,0.25));
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.selo-garantia:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 24px rgba(230,204,159,0.4));
+}
+
+.garantia-section h2 {
+  font-family: "GFS Didot", serif;
+  color: #e6cc9f;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.garantia-section p {
+  color: #d7cdb9;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ---------- Animação leve ---------- */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.garantia-content {
+  animation: fadeSlide 1.2s ease forwards;
+}
+
+@media (max-width: 768px) {
+  .garantia-section {
+    padding: 5rem 1.5rem;
+  }
+
+  .garantia-section h2 {
+    font-size: 1.9rem;
+  }
+
+  .garantia-section p {
+    font-size: 1rem;
+  }
+}
+
+/* ---------- FORMULÁRIO CORPORATIVO ---------- */
+.form-empresas-section {
+  background: radial-gradient(circle at 25% 10%, rgba(255,255,255,0.02), rgba(0,0,0,0.95) 80%);
+  padding: 6rem 2rem;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-empresas-section h2 {
+  font-family: "GFS Didot", serif;
+  color: #e6cc9f;
+  font-size: 2.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.form-intro {
+  color: #d7cdb9;
+  max-width: 620px;
+  margin: 0 auto 3rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+#formEmpresas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.input-group input {
+  flex: 1;
+}
+
+#formEmpresas input,
+#formEmpresas textarea {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  color: #f3e9d6;
+  width: 100%;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: "Inter", sans-serif;
+}
+
+#formEmpresas input:focus,
+#formEmpresas textarea:focus {
+  outline: none;
+  border-color: rgba(166,124,82,0.5);
+  box-shadow: 0 0 10px rgba(166,124,82,0.25);
+}
+
+#formEmpresas textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.btn-padrao.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.msg-sucesso {
+  color: #e6cc9f;
+  font-size: 1.05rem;
+  margin-top: 1.8rem;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Animação */
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .input-group {
+    flex-direction: column;
+  }
+}
+
+
+.footer{
+  text-align: center;
 }

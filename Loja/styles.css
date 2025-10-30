@@ -362,28 +362,27 @@ p, li{font-family: "Raleway", "Helvetica" sans-serif;}
 /* 🖼️ MODAL DE PRODUTO */
 /*==============================*/
 #modalProduto .modal-dialog{max-width:950px!important;width:92%;}
-#modalProduto .modal-content{
-  border:0;
-  border-radius:18px;
-  box-shadow:0 10px 34px rgba(0,0,0,.22);
-  background:#fff;
-  padding:2rem;
+#modalProduto .modal-content {
+  background: #fffaf3;
+  border-radius: 24px;
+  border: 1px solid rgba(166, 124, 82, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  padding: 2.5rem;
 }
+
 #modalProduto .produto-modal{
   display:grid;
   grid-template-columns:1.1fr 1.3fr;
   gap:2rem;
   align-items:start;
 }
-#modalProduto .modal-img{
-  width:100%;
-  max-width:380px;
-  border-radius:14px;
-  object-fit:cover;
-  box-shadow:0 6px 18px rgba(0,0,0,.18);
-  justify-self:center;
-}
+
 #modalProduto .modal-copy{min-width:320px;}
+#modalProduto .modal-header h2 {
+  color: #a67c52;
+  font-family: "GFS Didot", serif;
+  letter-spacing: 0.5px;
+}
 #modalProduto .modal-copy h3,
 #modalProduto .modal-copy h4{
  
@@ -409,11 +408,62 @@ p, li{font-family: "Raleway", "Helvetica" sans-serif;}
   background:linear-gradient(135deg,#000000,#a67c42);
   transform:translateY(-1px);
 }
-@media(max-width:768px){
-  #modalProduto .produto-modal{grid-template-columns:1fr;}
-  #modalProduto .modal-img{max-width:100%;}
-  #modalProduto .modal-copy{min-width:0;}
+
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+#modalProduto .modal-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 380px;          /* limite firme */
+  max-height: 420px;         /* evita estourar o modal */
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: contain;       /* mantém proporção */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  transition: opacity 0.4s ease;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.8rem;
+}
+
+.carousel-controls button {
+  background: radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.25), rgba(166,124,82,0.25));
+  border: 1px solid rgba(166,124,82,0.5);
+  color: var(--color-principal);
+  font-size: 2.4rem;
+  font-family: 'GFS Didot', serif;
+  padding: 0.3rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(166,124,82,0.2);
+}
+
+.carousel-controls button:hover {
+  background: radial-gradient(circle at 40% 40%, rgba(166,124,82,0.7), rgba(166,124,82,0.4));
+  color: #fff;
+  transform: scale(1.15);
+  box-shadow: 0 6px 20px rgba(166,124,82,0.5);
+}
+
+  #modalProduto .modal-copy{min-width:0;}
+
 
 /*==============================*/
 /* 💳 MODAIS CARRINHO / CHECKOUT / CONFIRMAÇÃO */
@@ -448,4 +498,13 @@ p, li{font-family: "Raleway", "Helvetica" sans-serif;}
 
 .tabela-ficha {
   color: var(--color-principal);
+}
+
+
+@media(max-width:768px){
+  #modalProduto .produto-modal {
+  display: grid;
+  grid-template-columns: 1.1fr 1.3fr;
+  gap: 2.5rem;
+}
 }
