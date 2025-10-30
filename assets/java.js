@@ -208,3 +208,11 @@ document.addEventListener("DOMContentLoaded", () => {
     slides.style.transform = `translateX(${-index * 100}%)`;
   };
 });
+
+// Ativa a animação do hambúrguer
+document.addEventListener("DOMContentLoaded", () => {
+  const toggler = document.querySelector(".navbar-toggler");
+  toggler?.addEventListener("click", () => {
+    toggler.classList.toggle("active");
+  });
+});
