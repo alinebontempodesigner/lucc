@@ -11,7 +11,59 @@ const valorPreco = document.getElementById('valor-preco');
 const produtos = [
 
   {
-  nome: "Eco Strawberry – Fine Art Sensitiva",
+  nome: "Sopro de âmbar – Fine Art",
+  tipo: "obras",
+  quantidade: "peca-unica",
+  preco: 987,
+  imagens: [
+    "imagens/soproambar.png"
+  ],
+  descricao: "Um corpo que respira terra e luz. Sopro de Âmbar é a harmonia entre força, calma e desejo em forma de cor.",
+  descricaoHtml: `
+    <h3>Sopro de âmbar</h3>
+    <p>
+      Entre curvas e respiros, o corpo se dissolve em tons terrosos, fragmentos de calor, coragem e entrega. Sopro de Âmbar <strong>celebra a mulher que se reconstrói, que exala vida mesmo quando tudo ao redor parece silenciar.</strong>
+As linhas que a moldam são veias de luz e sombra, pulsando com o mesmo ritmo da terra. Um retrato de liberdade: o instante em que o corpo se torna alma, e a alma, cor.
+    </p>
+
+   
+    <h4>Por que essa obra funciona no décor?</h4>
+    <ul>
+      <li>Tons terrosos que aquecem e harmonizam com paletas neutras ou naturais;</li>
+      <li>Linhas orgânicas que trazem movimento e leveza ao ambiente;</li>
+      <li>Presença feminina sutil, transmitindo equilíbrio e introspecção;</li>
+      <li>Textura visual que adiciona profundidade sem poluir o espaço;</li>
+      <li>Combina com estilos contemporâneo, boho, minimalista e escandinavo;</li>
+      <li>Funciona como ponto de destaque em paredes claras ou composição de galeria;</li>
+    </ul>
+
+    <h4>Ficha Técnica</h4>
+    <table class="tabela-ficha">
+      <tr><th>Título</th><td> Sopro de âmbar</td></tr>
+      <tr><th>Artista</th><td> Aline Bontempo</td></tr>
+      <tr><th>Técnica</th><td> Ilustração digital autoral</td></tr>
+      <tr><th>Impressão indicada</th><td> Fine Art em papel 310g ou canvas premium</td></tr>
+      <tr><th>Tamanhos sugeridos</th><td> 30x40 • 50x70 • 70x100 cm</td></tr>
+      <tr><th>Acabamento</th><td> Com ou sem moldura; opção com vidro antirreflexo</td></tr>
+      <tr><th>Produção</th><td> Sob demanda</td></tr>
+      <tr><th>Certificado</th><td> Acompanha certificado de autenticidade</td></tr>
+    </table>
+
+    <h4>Para quem é</h4>
+    <p>
+      Feita para quem busca arte que conversa com o íntimo, para quem sente antes de entender. <strong> Sopro de Âmbar é um convite para quem aprecia beleza com propósito</strong>, colecionadores, amantes do design orgânico e pessoas que veem no corpo humano uma extensão da paisagem emocional.
+      Perfeita para ambientes com conceito “<em>arte + experiência</em>”.
+    </p>
+
+    <p class="seo">
+      Palavras-chave: obra fine art, arte, quadro decorativo luxo, arte digital autoral,
+      decoração sensorial, Lucc Concept, arte para ambientes marcantes.
+    </p>
+  `
+},
+
+  {
+  nome: "Echo Strawberry – Fine Art",
   tipo: "obras",
   quantidade: "peca-unica",
   preco: 987,
@@ -20,11 +72,11 @@ const produtos = [
     "imagens/strawberry2.png",
     "imagens/strawberry3.png"
   ],
-  descricao: "Obra fine art inspirada na doçura ácida do morango, com vibe feminina, sensual e contemporânea.",
+  descricao: "Obra fine art, com vibe feminina, sensual e contemporânea.",
   descricaoHtml: `
-    <h3>Eco Strawberry – Arte para ambientes que falam</h3>
+    <h3>Echo Strawberry – Arte para ambientes que falam</h3>
     <p>
-      “Eco Strawberry” nasce daquele contraste que você ama: <strong>doce, mas não boba</strong>. 
+      “Echo Strawberry” nasce daquele contraste que você ama: <strong>doce, mas não boba</strong>. 
       É uma obra pensada para espaços que misturam feminilidade, design e um toque de provocação. 
       Ideal para salas conceituais, estúdios de beleza, lojas autorais e home offices de mulheres criativas.
     </p>
@@ -45,10 +97,10 @@ const produtos = [
 
     <h4>Ficha Técnica</h4>
     <table class="tabela-ficha">
-      <tr><th>Título</th><td>Eco Strawberry</td></tr>
+      <tr><th>Título</th><td>Echo Strawberry</td></tr>
       <tr><th>Artista</th><td>Aline Bontempo</td></tr>
       <tr><th>Coleção</th><td>Sweet Icons</td></tr>
-      <tr><th>Técnica</th><td>Ilustração digital autoral (Clip Studio Paint)</td></tr>
+      <tr><th>Técnica</th><td>Ilustração digital autoral</td></tr>
       <tr><th>Impressão indicada</th><td>Fine Art em papel 310g ou canvas premium</td></tr>
       <tr><th>Tamanhos sugeridos</th><td>30x40 • 50x70 • 70x100 cm</td></tr>
       <tr><th>Acabamento</th><td>Com ou sem moldura; opção com vidro antirreflexo</td></tr>
@@ -59,12 +111,12 @@ const produtos = [
     <h4>Para quem é</h4>
     <p>
       Para quem quer <strong>uma peça feminina sem clichê</strong>, que converse com perfume, estética e sensorialidade.
-      Perfeita para ambientes Instagramáveis, cantinho de autocuidado, loja de aromatizadores, estúdio de design e
-      ambientes com conceito “<em>arte + aroma + experiência</em>”.
+      Perfeita para ambientes Instagramáveis e
+      ambientes com conceito “<em>arte + experiência</em>”.
     </p>
 
     <p class="seo">
-      Palavras-chave: obra fine art feminina, arte morango, quadro decorativo luxo, arte digital autoral,
+      Palavras-chave: obra fine art feminina, arte, quadro decorativo luxo, arte digital autoral,
       decoração sensorial, Lucc Concept, arte para ambientes marcantes.
     </p>
   `
