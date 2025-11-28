@@ -278,44 +278,140 @@ p, li{font-family: "Raleway", "Helvetica" sans-serif;}
 }
 
 /*==============================*/
-/* 🏠 HERO */
+/* 🏠 HERO – VIBE LUXO URBANO */
 /*==============================*/
 .hero{
-  position:relative;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  min-height:500px;
-  background:url('imagens/cerejas.png') center/cover no-repeat;
-  color:#fff;
-  text-align:center;
+  position: relative;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1.5rem 4rem;
+  background:
+    linear-gradient(135deg, rgba(0,0,0,0.78), rgba(0,0,0,0.55)),
+    url('imagens/cerejas.png') center/cover no-repeat;
+  color: var(--color-neutra);
 }
+
 .hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.4);
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
 }
+
+/* Conteúdo central mais “card” e menos espalhado */
 .hero-content{
-  position:relative;
-  z-index:2;
-  max-width:900px;
-  padding:2rem;
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
 }
-.hero-text h1{font-size:3rem;margin-bottom:1rem;}
-.hero-text p{font-size:1.2rem;line-height:1.6;margin-bottom:2rem;}
+
+/* Como você ainda não tem imagem do lado, deixo preparado.
+   Se quiser usar só texto por enquanto, isso já funciona bem. */
+.hero-text{
+  max-width: 640px;
+  text-align: left;
+}
+
+/* Título principal */
+.hero-text h1{
+  font-family: var(--font-title);
+  font-size: clamp(2.3rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  margin-bottom: 1.1rem;
+  letter-spacing: .02em;
+}
+
+/* Subtítulo (edição limitada / sensação) */
+.hero-text h2{
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: rgba(255,255,240, .86);
+}
+
+/* Parágrafos sensoriais */
+.hero-text p{
+  font-size: 0.98rem;
+  line-height: 1.8;
+  margin-bottom: 0.8rem;
+  color: rgba(255,255,240, .86);
+}
+
+/* Pequeno texto de escassez */
+.hero-text small{
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: rgba(255,255,240, .72);
+}
+
+/* Botão principal */
 .btn-destaque{
-  background-color:var(--color-secundaria);
-  color:#fff;
-  padding:1rem 2rem;
-  border-radius:6px;
-  font-weight:bold;
-  text-transform:uppercase;
-  text-decoration:none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  background: linear-gradient(135deg, var(--color-secundaria), #c89b63);
+  color: #fff;
+  padding: 0.9rem 2.4rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 12px 28px rgba(0,0,0,.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
+
 .btn-destaque:hover{
-  background-color:var(--color-principal);
-  transform:scale(1.05);
+  background: linear-gradient(135deg, #000000, var(--color-secundaria));
+  transform: translateY(-2px);
+  box-shadow: 0 18px 38px rgba(0,0,0,.45);
+  text-decoration: none;
+}
+
+/* Mobile: centralizar, respirar e ficar fofinho */
+@media (max-width: 768px){
+  .hero{
+    padding: 5rem 1.4rem 3rem;
+    text-align: center;
+  }
+
+  .hero-content{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hero-text{
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-text h1{
+    font-size: 2.1rem;
+  }
+
+  .hero-text p{
+    font-size: 0.94rem;
+  }
+
+  .btn-destaque{
+    width: 100%;
+    max-width: 320px;
+  }
 }
 
 /*==============================*/
