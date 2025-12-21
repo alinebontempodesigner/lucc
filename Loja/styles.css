@@ -289,7 +289,7 @@ p, li{font-family: "Raleway", "Helvetica" sans-serif;}
   padding: 6rem 1.5rem 4rem;
   background:
     linear-gradient(135deg, rgba(0,0,0,0.78), rgba(0,0,0,0.55)),
-    url('imagens/cerejas.png') center/cover no-repeat;
+    url('imagens/galeria.png') center/cover no-repeat;
   color: var(--color-neutra);
 }
 

@@ -11,446 +11,1073 @@ const valorPreco = document.getElementById('valor-preco');
 const produtos = [
 
   {
-  nome: "Sopro de âmbar – Fine Art",
-  tipo: "obras",
-  quantidade: "kit-completo",
-  preco: 987,
-  imagens: [
-    "imagens/soproambar.png"
-  ],
-  descricao: "Um corpo que respira terra e luz. Sopro de Âmbar é a harmonia entre força, calma e desejo em forma de cor.",
-  descricaoHtml: `
-    <h3>Sopro de âmbar</h3>
-    <p>
-      Entre curvas e respiros, o corpo se dissolve em tons terrosos, fragmentos de calor, coragem e entrega. Sopro de Âmbar <strong>celebra a mulher que se reconstrói, que exala vida mesmo quando tudo ao redor parece silenciar.</strong>
-As linhas que a moldam são veias de luz e sombra, pulsando com o mesmo ritmo da terra. Um retrato de liberdade: o instante em que o corpo se torna alma, e a alma, cor.
-    </p>
-
-   
-    <h4>Por que essa obra funciona no décor?</h4>
-    <ul>
-      <li>Tons terrosos que aquecem e harmonizam com paletas neutras ou naturais;</li>
-      <li>Linhas orgânicas que trazem movimento e leveza ao ambiente;</li>
-      <li>Presença feminina sutil, transmitindo equilíbrio e introspecção;</li>
-      <li>Textura visual que adiciona profundidade sem poluir o espaço;</li>
-      <li>Combina com estilos contemporâneo, boho, minimalista e escandinavo;</li>
-      <li>Funciona como ponto de destaque em paredes claras ou composição de galeria;</li>
-    </ul>
-
-    <h4>Ficha Técnica</h4>
-    <table class="tabela-ficha">
-      <tr><th>Título</th><td> Sopro de âmbar</td></tr>
-      <tr><th>Artista</th><td> Aline Bontempo</td></tr>
-      <tr><th>Técnica</th><td> Ilustração digital autoral</td></tr>
-      <tr><th>Impressão indicada</th><td> Fine Art em papel 310g ou canvas premium</td></tr>
-      <tr><th>Tamanhos sugeridos</th><td> 30x40 • 50x70 • 70x100 cm</td></tr>
-      <tr><th>Acabamento</th><td> Com ou sem moldura; opção com vidro antirreflexo</td></tr>
-      <tr><th>Produção</th><td> Sob demanda</td></tr>
-      <tr><th>Certificado</th><td> Acompanha certificado de autenticidade</td></tr>
-    </table>
-
-    <h4>Para quem é</h4>
-    <p>
-      Feita para quem busca arte que conversa com o íntimo, para quem sente antes de entender. <strong> Sopro de Âmbar é um convite para quem aprecia beleza com propósito</strong>, colecionadores, amantes do design orgânico e pessoas que veem no corpo humano uma extensão da paisagem emocional.
-      Perfeita para ambientes com conceito “<em>arte + experiência</em>”.
-    </p>
-
-    <p class="seo">
-      Palavras-chave: obra fine art, arte, quadro decorativo luxo, arte digital autoral,
-      decoração sensorial, Lucc Concept, arte para ambientes marcantes.
-    </p>
-  `
-},
-
-{
-  nome: "Kit Coleção Urbanos – 3 Fine Arts + Difusor + Home Spray",
+  nome: "Coleção completa - Rastro",
   tipo: "kit-colecao",
-  colecao: "Urbanos",
-  quantidade: "sob-encomenda", // pode mudar p/ 'limitado', 'peca-unica', etc.
-  preco: 0, //  definir depois: coloque o valor final aqui
+  quantidade: "Rastro",
+  preco: 987,
   imagens: [
-    "imagens/urbanos-kit.png" // mockup do kit completo (3 quadros + aromatizadores)
+    "imagens/Sala Rastro.jpg",
+    "imagens/ilustração4 (2).png",
+    "imagens/ilustração6.png",
+    "imagens/difusorhomerastro.png",
   ],
-  descricao: "Um encontro entre cidades, luzes e memórias: três obras fine art + difusor de varetas + home spray para transformar o ambiente em uma experiência urbana completa.",
+  descricao: "Rastro nasce daquilo que permanece quando o instante passa. É o desejo de viver cercada por beleza com significado: ambientes que traduzem identidade, sensibilidade e elegância sem excesso. Uma coleção criada para quem entende que o verdadeiro luxo não se impõe: ele se revela, aos poucos, e fica.",
+    descricaoHtml: `
+  <h3>Coleção Rastro</h3>
+
+  <p>
+    <strong>Rastro</strong> nasce daquilo que permanece quando o instante passa.
+    É sobre presença — não a que ocupa espaço, mas a que se instala em silêncio.
+    Uma coleção criada para quem sonha em viver cercada por beleza com significado,
+    onde cada detalhe carrega intenção, sensibilidade e elegância sem esforço.
+  </p>
+
+  <p>
+    As obras e os perfumes da coleção conversam entre si como camadas de uma mesma história.
+    Nada é excessivo. Tudo permanece.
+    <strong>Rastro</strong> traduz o desejo de ambientes que acolhem,
+    refletem identidade e revelam profundidade com o tempo.
+  </p>
+
+  <h4>As obras</h4>
+  <p>
+    As peças da coleção são produzidas em <strong>impressão Fine Art</strong>,
+    valorizando textura, contraste e fidelidade cromática.
+    Cada obra acompanha <strong>moldura branca</strong>, criando um acabamento limpo,
+    sofisticado e atemporal — ideal para ambientes contemporâneos e sensoriais.
+  </p>
+
+  <ul>
+    <li>Impressão Fine Art de alta qualidade;</li>
+    <li>Moldura branca, elegante e minimalista;</li>
+    <li>Tamanho padrão: <strong>30 x 40 cm</strong>;</li>
+    <li>Produção cuidadosa, pensada para presença de galeria.</li>
+  </ul>
+
+  <h4>Os perfumes da coleção</h4>
+  <p>
+    Para além do visual, <strong>Rastro</strong> se completa no ar.
+    A coleção inclui um <strong>difusor de varetas</strong> e um
+    <strong>home spray</strong>, ambos com perfume autoral e exclusivo,
+    criados para vestir o ambiente com sofisticação e identidade.
+  </p>
+
+  <ul>
+    <li>Difusor de varetas com perfume autoral exclusivo;</li>
+    <li>Frasco em <strong>vidro preto</strong>, design elegante e atemporal;</li>
+    <li>Volume: <strong>300 ml</strong>;</li>
+    <li>Home spray com o mesmo perfume da coleção;</li>
+    <li>Volume do spray: <strong>300 ml</strong>;</li>
+    <li>Perfumes pensados para criar atmosfera e permanência.</li>
+  </ul>
+
+  <h4>O conceito</h4>
+  <p>
+    Rastro é atmosfera.
+    É a marca invisível que um espaço deixa em quem entra.
+    Uma estética pensada para quem valoriza o essencial,
+    o equilíbrio entre força e delicadeza,
+    e o luxo que não se impõe — apenas permanece.
+  </p>
+
+  <h4>Para quem é</h4>
+  <p>
+    Para quem sonha em morar dentro de uma atmosfera.
+    Para quem escolhe com cuidado o que permanece à sua volta.
+    <strong>Rastro</strong> é para pessoas que entendem que casa,
+    arte e perfume não são objetos —
+    são extensões da própria identidade.
+  </p>
+
+  <p class="seo">
+    Palavras-chave: coleção Rastro, fine art autoral, moldura branca,
+    arte sensorial, difusor de varetas luxo, home spray autoral,
+    decoração sofisticada, Lucc Concept, ambientes marcantes.
+  </p>
+
+  `
+},
+
+{
+  nome: "Wave After Wave – Kit Automotivo",
+  tipo: "aromatizadores",
+  colecao: "Wave After Wave",
+  quantidade: "kit",
+  preco: 0, // defina o valor final aqui
+  imagens: [
+    "imagens/wawcarro1.png",
+    "imagens/wawcarro2.png",
+  ],
+  descricao: "Kit automotivo premium com perfume autoral exclusivo e difusor com tampa de cedro. Uma assinatura olfativa que transforma o interior do carro em experiência.",
   descricaoHtml: `
-    <h3>Coleção Urbanos – Kit completo</h3>
+    <h3>Wave After Wave — Kit Automotivo</h3>
+
     <p>
-      Três cidades, três atmosferas, um mesmo desejo: <strong>viver intensamente cada ambiente</strong>.
-      A Coleção <strong>Urbanos</strong> reúne Paris, Nova York e Londres em obras fine art autorais,
-      acompanhadas de um difusor de varetas e um home spray que ampliam a experiência para além do olhar.
-      É décor, é aroma, é memória em movimento.
+      <strong>Wave After Wave</strong> não é um perfume para carro.
+      É uma assinatura.
+      Uma presença que acompanha o movimento, o silêncio entre uma música e outra,
+      e o tempo vivido dentro do veículo.
     </p>
 
-    <h4>O que vem no kit</h4>
+    <p>
+      Criado para quem entende que o carro também é extensão da identidade,
+      este kit transforma o interior em um espaço sensorial sofisticado —
+      elegante, envolvente e absolutamente diferente do que existe no mercado.
+    </p>
+
+    <h4>O perfume</h4>
+    <p>
+      O perfume automotivo <strong>Wave After Wave</strong> vem em
+      <strong>frasco de vidro</strong>, com concentração pensada para
+      performance, elegância e permanência.
+      Não é spray. É perfume.
+    </p>
+
+    <p>
+      A fragrância se revela em camadas:
+      começa limpa e envolvente, evolui para notas quentes e profundas,
+      e permanece no ar com um rastro confortável, sofisticado e adulto.
+      Daqueles que fazem quem entra no carro perguntar:
+      <em>“Que perfume é esse?”</em>
+    </p>
+
     <ul>
-      <li>01 obra <strong>Paris</strong> – Fine Art com moldura preta;</li>
-      <li>01 obra <strong>Nova York</strong> – Fine Art com moldura preta;</li>
-      <li>01 obra <strong>Londres</strong> – Fine Art com moldura preta;</li>
-      <li>01 <strong>difusor de varetas</strong> da Coleção Urbanos;</li>
-      <li>01 <strong>home spray</strong> da Coleção Urbanos.</li>
+      <li>Perfume automotivo autoral e exclusivo;</li>
+      <li>Frasco de vidro premium;</li>
+      <li>Volume: <strong>100 ml</strong>;</li>
+      <li>Alta performance com elegância — sem exageros;</li>
+      <li>Perfuma sem invadir, permanece sem cansar.</li>
     </ul>
 
-    <h4>Tamanhos das obras</h4>
+    <h4>O difusor automotivo</h4>
     <p>
-      As três obras foram pensadas para compor uma mesma parede ou dialogarem entre ambientes diferentes:
+      O difusor acompanha o mesmo perfume da coleção,
+      mas com uma proposta ainda mais refinada:
+      <strong>tampa de cedro natural</strong>.
     </p>
+
+    <p>
+      Diferente dos difusores tradicionais com bambu,
+      o cedro entrega uma difusão mais elegante, contínua e estável,
+      além de agregar valor estético e sensorial.
+      O resultado é um perfume que se espalha com naturalidade,
+      acompanhando o ritmo do carro e do dia.
+    </p>
+
     <ul>
-      <li><strong>30 x 40 cm</strong></li>
-      <li><strong>40 x 50 cm</strong></li>
-      <li><strong>60 x 80 cm</strong></li>
+      <li>Difusor automotivo com perfume Wave After Wave;</li>
+      <li>Tampa de <strong>cedro natural</strong> (mais nobre e sofisticada);</li>
+      <li>Difusão suave e constante;</li>
+      <li>Volume: <strong>30 ml</strong>;</li>
+      <li>Design elegante que valoriza o interior do veículo.</li>
     </ul>
-    <p>
-      Você pode combinar os tamanhos de acordo com o projeto de décor, criando um ponto focal ou uma composição em galeria.
-    </p>
 
-    <h4>Ficha Técnica – Obras</h4>
-    <table class="tabela-ficha">
-      <tr><th>Coleção</th><td>Urbanos</td></tr>
-      <tr><th>Obras</th><td>Paris • Nova York • Londres</td></tr>
-      <tr><th>Técnica</th><td>Ilustração digital autoral</td></tr>
-      <tr><th>Impressão indicada</th><td>Fine Art em papel 310g ou canvas premium</td></tr>
-      <tr><th>Tamanhos sugeridos</th><td>30x40 • 40x50 • 60x80 cm</td></tr>
-      <tr><th>Moldura</th><td>Moldura preta, acabamento elegante e contemporâneo</td></tr>
-      <tr><th>Produção</th><td>Sob demanda</td></tr>
-      <tr><th>Certificado</th><td>Acompanha certificado de autenticidade Lucc Concept</td></tr>
-    </table>
-
-    <h4>Ficha Técnica – Aromatizadores</h4>
-    <table class="tabela-ficha">
-      <tr><th>Itens</th><td>Difusor de varetas + Home spray</td></tr>
-      <tr><th>Coleção</th><td>Urbanos</td></tr>
-      <tr><th>Uso</th><td>Ambientes internos</td></tr>
-      <tr><th>Conceito</th><td>Fragrâncias pensadas para acompanhar a estética das obras e criar uma experiência sensorial completa</td></tr>
-    </table>
-
-    <h4>Por que esse kit funciona no décor?</h4>
+    <h4>Por que esse kit é diferente dos tradicionais?</h4>
     <ul>
-      <li>Integra <strong>arte e aroma</strong> em uma única proposta;</li>
-      <li>Cores e composições inspiradas em grandes cidades, perfeitas para ambientes contemporâneos;</li>
-      <li>Moldura preta que traz sofisticação e dialoga com diferentes paletas de parede;</li>
-      <li>Cria um <strong>ponto de destaque</strong> em salas, halls, escritórios e espaços criativos;</li>
-      <li>Ideal para quem busca um ambiente com identidade, história e presença.</li>
+      <li>Não utiliza spray nem fragrâncias genéricas;</li>
+      <li>Perfume autoral, criado como assinatura olfativa;</li>
+      <li>Difusor com cedro — material mais nobre que o bambu;</li>
+      <li>Estética premium: frascos em vidro e acabamento sofisticado;</li>
+      <li>Experiência sensorial contínua, não apenas “cheiro de carro”.</li>
     </ul>
 
     <h4>Para quem é</h4>
     <p>
-      Para quem ama cidades, luzes, janelas acesas e histórias que começam em uma esquina qualquer.
-      Para quem quer <strong>um ambiente que pareça um cenário de filme</strong>, com arte na parede e fragrância no ar.
-      Um kit feito para quem entende que a casa também é um mapa dos lugares que moram dentro da gente.
+      Para quem vive o carro como refúgio, ritual e companhia.
+      Para quem escolhe música, rota e perfume com o mesmo cuidado.
+      <strong>Wave After Wave</strong> é para quem entende que luxo
+      está na sensação — e não no excesso.
     </p>
 
     <p class="seo">
-      Palavras-chave: coleção Urbanos, kit decoração, quadros com moldura preta, difusor de varetas, home spray,
-      fine art autoral, decoração contemporânea, Lucc Concept, arte e fragrância.
+      Palavras-chave: perfume automotivo premium, difusor automotivo luxo,
+      tampa de cedro, perfume autoral para carro, Wave After Wave,
+      Lucc Concept, assinatura olfativa, experiência sensorial automotiva.
+    </p>
+  `
+},
+
+
+{
+  nome: "Figo Caramel — Difusor + Home Spray - 100ml",
+  tipo: "aromatizadores",
+  colecao: "Lucc Concept",
+  quantidade: "kit",
+  preco: 0, // defina o valor final
+  imagens: [
+    "imagens/dhpeqsala.png",
+    "imagens/dhpeq.png",
+  ],
+  descricao: "Difusor de varetas e home spray Figo Caramel. Um perfume envolvente, confortável e elegante para o dia a dia.",
+  
+  descricaoHtml: `
+    <h3>Figo Caramel — Lucc Concept</h3>
+
+    <p>
+      <strong>Figo Caramel</strong> é presença acolhedora.
+      Um perfume criado para acompanhar o cotidiano com elegância,
+      trazendo a sensação de casa bem cuidada,
+      conforto imediato e atmosfera envolvente.
+    </p>
+
+    <p>
+      A união do figo com notas adocicadas e cremosas
+      cria um perfume quente, equilibrado e sofisticado.
+      Doce na medida certa,
+      sem excessos,
+      com aquele fundo que convida a permanecer.
+    </p>
+
+    <h4>A experiência</h4>
+    <p>
+      Figo Caramel se revela aos poucos.
+      A abertura frutada é suave e elegante,
+      evoluindo para um corpo mais quente e confortável,
+      que envolve o ambiente sem saturar.
+      Um perfume fácil de amar,
+      pensado para uso diário,
+      mas com personalidade.
+    </p>
+
+    <h4>O kit</h4>
+    <p>
+      O conjunto reúne um <strong>difusor de varetas</strong>
+      e um <strong>home spray</strong>,
+      permitindo controlar a intensidade
+      e manter o ambiente sempre agradável,
+      com o mesmo perfume autoral da coleção.
+    </p>
+
+    <ul>
+      <li>Difusor de varetas com perfume Figo Caramel;</li>
+      <li>Home spray com o mesmo perfume;</li>
+      <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
+      <li>Volume: <strong>100 ml</strong> (cada item);</li>
+      <li>Perfume confortável, elegante e de alta qualidade.</li>
+    </ul>
+
+    <h4>Por que escolher Figo Caramel?</h4>
+    <ul>
+      <li>Cria atmosfera acolhedora e sofisticada;</li>
+      <li>Perfume adocicado equilibrado, nunca enjoativo;</li>
+      <li>Funciona bem em diferentes ambientes;</li>
+      <li>Ideal para quem busca elegância no cotidiano;</li>
+      <li>Qualidade autoral Lucc Concept.</li>
+    </ul>
+
+    <h4>Para quem é</h4>
+    <p>
+      Para quem valoriza o conforto,
+      a sensação de casa bem cuidada
+      e perfumes que acompanham a rotina
+      com leveza e sofisticação.
+    </p>
+    <small> *Imagens meramente ilustrativas.</small>
+
+    <p class="seo">
+      Palavras-chave: figo caramel, difusor de varetas,
+      home spray Lucc Concept, perfume autoral,
+      aromatizador sofisticado, decoração sensorial,
+      bem-estar e elegância.
     </p>
   `
 },
 
 {
-  nome: "Echo Strawberry – Fine Art",
-  tipo: "obras",
-  quantidade: "peca-unica",
-  preco: 987,
+  nome: "Figo Caramel — Difusor + Home Spray - 200ml",
+  tipo: "aromatizadores",
+  colecao: "Lucc Concept",
+  quantidade: "kit",
+  preco: 0, // defina o valor final
   imagens: [
-    "imagens/strawberry1.png",
-    "imagens/strawberry2.png",
-    "imagens/strawberry3.png"
+    "imagens/dhgrfigo.png"
   ],
-  descricao: "Obra fine art, com vibe feminina, sensual e contemporânea.",
+  descricao: "Difusor de varetas e home spray Figo Caramel. Um perfume envolvente, confortável e elegante para o dia a dia.",
   descricaoHtml: `
-    <h3>Echo Strawberry – Arte para ambientes que falam</h3>
+    <h3>Figo Caramel — Lucc Concept</h3>
+
     <p>
-      “Echo Strawberry” nasce daquele contraste que você ama: <strong>doce, mas não boba</strong>. 
-      É uma obra pensada para espaços que misturam feminilidade, design e um toque de provocação. 
-      Ideal para salas conceituais, estúdios de beleza, lojas autorais e home offices de mulheres criativas.
+      <strong>Figo Caramel</strong> é presença acolhedora.
+      Um perfume criado para acompanhar o cotidiano com elegância,
+      trazendo a sensação de casa bem cuidada,
+      conforto imediato e atmosfera envolvente.
     </p>
 
     <p>
-      A estética é <em>glam, mas natural</em>: fundo texturizado, destaque para o vermelho-morango e nuances de nude que 
-      conversam com paletas neutras. É daquelas peças que você coloca na parede e o ambiente fica com cara de 
-      <strong>editorial de revista</strong>.
+      A união do figo com notas adocicadas e cremosas
+      cria um perfume quente, equilibrado e sofisticado.
+      Doce na medida certa,
+      sem excessos,
+      com aquele fundo que convida a permanecer.
     </p>
 
-    <h4>Por que essa obra funciona no décor?</h4>
+    <h4>A experiência</h4>
+    <p>
+      Figo Caramel se revela aos poucos.
+      A abertura frutada é suave e elegante,
+      evoluindo para um corpo mais quente e confortável,
+      que envolve o ambiente sem saturar.
+      Um perfume fácil de amar,
+      pensado para uso diário,
+      mas com personalidade.
+    </p>
+
+    <h4>O kit</h4>
+    <p>
+      O conjunto reúne um <strong>difusor de varetas</strong>
+      e um <strong>home spray</strong>,
+      permitindo controlar a intensidade
+      e manter o ambiente sempre agradável,
+      com o mesmo perfume autoral da coleção.
+    </p>
+
     <ul>
-      <li>Composição vertical pensada para painéis, cantos de leitura e entrada de casa;</li>
-      <li>Paleta que combina com madeira, dourado, preto e off white;</li>
-      <li>Arte digital em alta resolução pronta para impressão Fine Art;</li>
-      <li>Conceito feminino sem ser infantil — sensualidade adulta, elegante.</li>
+      <li>Difusor de varetas com perfume Figo Caramel;</li>
+      <li>Home spray com o mesmo perfume;</li>
+      <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
+      <li>Volume: <strong>200 ml</strong> (cada item);</li>
+      <li>Perfume confortável, elegante e de alta qualidade.</li>
     </ul>
+
+    <h4>Por que escolher Figo Caramel?</h4>
+    <ul>
+      <li>Cria atmosfera acolhedora e sofisticada;</li>
+      <li>Perfume adocicado equilibrado, nunca enjoativo;</li>
+      <li>Funciona bem em diferentes ambientes;</li>
+      <li>Ideal para quem busca elegância no cotidiano;</li>
+      <li>Qualidade autoral Lucc Concept.</li>
+    </ul>
+
+    <h4>Para quem é</h4>
+    <p>
+      Para quem valoriza o conforto,
+      a sensação de casa bem cuidada
+      e perfumes que acompanham a rotina
+      com leveza e sofisticação.
+    </p>
+    <small> *Imagens meramente ilustrativas.</small>
+
+    <p class="seo">
+      Palavras-chave: figo caramel, difusor de varetas,
+      home spray Lucc Concept, perfume autoral,
+      aromatizador sofisticado, decoração sensorial,
+      bem-estar e elegância.
+    </p>
+  `
+},
+
+ {
+  nome: "Rastro — Díptico Fine Art",
+  tipo: "obras",
+  colecao: "Rastro",
+  quantidade: "kit-obras",
+  preco: 1974, // ajuste conforme sua estratégia
+  imagens: [
+    "imagens/rastrofineart.jpg",
+    "imagens/ilustração4 (2).png",
+    "imagens/ilustração6.png"
+  ],
+  descricao: "Duas obras Fine Art vendidas em conjunto. Um díptico sobre presença, ausência e aquilo que permanece.",
+  descricaoHtml: `
+    <h3>Rastro — Díptico Fine Art</h3>
+
+    <p>
+      <strong>Rastro</strong> é sobre o que permanece depois da travessia.
+      Não o encontro explícito, nem o adeus declarado —
+      mas aquilo que continua no ar, mesmo quando tudo parece ter seguido adiante.
+    </p>
+
+    <p>
+      Este díptico apresenta duas figuras que não se olham,
+      mas se reconhecem.
+      Ele e ela caminham em direções distintas,
+      carregando consigo vestígios do que foi vivido.
+      O espaço entre as obras não separa —
+      ele conecta.
+    </p>
+
+    <h4>A narrativa visual</h4>
+    <p>
+      Na obra feminina, o movimento é marcado pela liberação.
+      O corpo avança com elegância silenciosa,
+      enquanto o rastro se fragmenta em tons profundos,
+      como emoções que finalmente encontram saída.
+      Há força, decisão e transformação.
+    </p>
+
+    <p>
+      Na obra masculina, o gesto é mais contido.
+      O caminhar é firme, quase introspectivo,
+      e o rastro se dissolve em camadas mais sóbrias,
+      revelando memória, permanência e silêncio.
+      Ele não olha para trás —
+      mas o passado ainda o acompanha.
+    </p>
+
+    <p>
+      Juntas, as obras constroem uma narrativa sutil sobre
+      encontros que não se completam,
+      histórias que não se apagam
+      e sentimentos que continuam existindo,
+      mesmo sem presença física.
+    </p>
+
+    <h4>O diálogo no ambiente</h4>
+    <p>
+      Pensadas para serem exibidas lado a lado,
+      as obras criam um ponto de equilíbrio visual e emocional.
+      O díptico funciona como um convite à contemplação,
+      onde cada observador projeta sua própria história
+      no intervalo entre uma imagem e outra.
+    </p>
+
+    <p>
+      A moldura branca reforça a leitura contemporânea e sofisticada,
+      permitindo que a obra respire
+      e dialogue com diferentes estilos de décor,
+      do minimalista ao sensorial.
+    </p>
 
     <h4>Ficha Técnica</h4>
     <table class="tabela-ficha">
-      <tr><th>Título</th><td>Echo Strawberry</td></tr>
-      <tr><th>Artista</th><td>Aline Bontempo</td></tr>
-      <tr><th>Coleção</th><td>Sweet Icons</td></tr>
+      <tr><th>Coleção</th><td>Rastro</td></tr>
+      <tr><th>Formato</th><td>Díptico (2 obras vendidas juntas)</td></tr>
       <tr><th>Técnica</th><td>Ilustração digital autoral</td></tr>
-      <tr><th>Impressão indicada</th><td>Fine Art em papel 310g ou canvas premium</td></tr>
-      <tr><th>Tamanhos sugeridos</th><td>30x40 • 50x70 • 70x100 cm</td></tr>
-      <tr><th>Acabamento</th><td>Com ou sem moldura; opção com vidro antirreflexo</td></tr>
+      <tr><th>Impressão</th><td>Fine Art de alta qualidade</td></tr>
+      <tr><th>Moldura</th><td>Moldura branca, acabamento clean e contemporâneo</td></tr>
+      <tr><th>Tamanho</th><td>30 x 40 cm (cada obra)</td></tr>
       <tr><th>Produção</th><td>Sob demanda</td></tr>
       <tr><th>Certificado</th><td>Acompanha certificado de autenticidade</td></tr>
     </table>
 
     <h4>Para quem é</h4>
     <p>
-      Para quem quer <strong>uma peça feminina sem clichê</strong>, que converse com perfume, estética e sensorialidade.
-      Perfeita para ambientes Instagramáveis e
-      ambientes com conceito “<em>arte + experiência</em>”.
+      Para quem entende que arte não é apenas imagem,
+      mas sensação.
+      Para quem aprecia silêncio, narrativa e profundidade.
+    </p>
+
+    <p>
+      <strong>Rastro</strong> é ideal para ambientes sofisticados,
+      contemporâneos e sensoriais —
+      salas, escritórios, galerias pessoais
+      e espaços onde a arte não decora,
+      mas permanece.
     </p>
 
     <p class="seo">
-      Palavras-chave: obra fine art feminina, arte, quadro decorativo luxo, arte digital autoral,
-      decoração sensorial, Lucc Concept, arte para ambientes marcantes.
+      Palavras-chave: coleção Rastro, díptico fine art, obras contemporâneas,
+      arte autoral brasileira, moldura branca, arte sensorial,
+      decoração sofisticada, Lucc Concept, arte com narrativa.
     </p>
   `
 },
+
+
 
  {
-  nome: "Difusor Aromático Premium",
-  tipo: "difusores",
-  quantidade: "Kits",
-  preco: 197,
-  imagens: ["imagens/mockupdifusorestilo1.png"],
-  descricao: "Perfumes artesanais Lucc Concept — sofisticação, serenidade e design artesanal em um só gesto.",
-
-  descricaoHtml: `
-    <h3>Difusor Aromático Premium Lucc Concept</h3>
-    <p>
-      Com design elegante em vidro fumê e acabamento artesanal, o <strong>Difusor Aromático Premium Lucc Concept</strong> transforma ambientes em experiências sensoriais únicas.
-      Sua fragrância exclusiva combina <em>notas florais e amadeiradas</em> que evocam serenidade, aconchego e sofisticação.
-    </p>
-
-    <ul>
-      <li>Essência autoral com blend floral-amadeirado</li>
-      <li>Vidro premium com acabamento artesanal</li>
-      <li>Varetas de madeira natural para difusão contínua</li>
-      <li>Ideal para salas, escritórios e espaços de recepção</li>
-    </ul>
-
-    <h4>Ficha Técnica</h4>
-    <table class="tabela-ficha">
-      <tr><th>Produto</th><td>Difusor Aromático Premium</td></tr>
-      <tr><th>Marca</th><td>Lucc Concept</td></tr>
-      <tr><th>Categoria</th><td>Home & Decor</td></tr>
-      <tr><th>Fragrância</th><td>Notas florais e amadeiradas</td></tr>
-      <tr><th>Volume</th><td>250 ml</td></tr>
-      <tr><th>Material</th><td>Vidro fumê + madeira natural</td></tr>
-      <tr><th>Duração</th><td>Até 90 dias</td></tr>
-      <tr><th>Produção</th><td>Artesanal e sob demanda</td></tr>
-      <tr><th>Origem</th><td>Feito no Brasil</td></tr>
-    </table>
-
-    <h4>Modo de Uso</h4>
-    <ul>
-      <li>Remova a tampa e insira as varetas no frasco.</li>
-      <li>Aguarde a absorção da essência e vire as varetas a cada 2 dias para intensificar o aroma.</li>
-      <li>Evite exposição direta ao sol para preservar a fragrância.</li>
-    </ul>
-
-    <p class="seo">
-      Palavras-chave: difusor aromático de luxo, decoração sofisticada, aromas autorais, fragrância floral amadeirada, Lucc Concept, design artesanal, bem-estar olfativo.
-    </p>
-  `
-},
-
-
-  {
-  nome: "Kit Lucc Concept – Difusor + Spray Perfumador",
+  nome: "Lavanda Francesa — Difusor + Home Spray - 100ml",
   tipo: "aromatizadores",
-  quantidade: "kits",
-  preco: 219,
-  imagens: ["imagens/kitdifusorhomeestilo2.png"],
-  descricao: "Kit aromático premium Lucc Concept — difusor com varetas e spray com fragrância autoral para transformar seus espaços.",
-
+  colecao: "Lucc Concept",
+  quantidade: "kit",
+  preco: 0, // defina o valor final
+  imagens: [
+    "imagens/dhpeqlav.png"
+  ],
+  descricao: "Difusor de varetas e home spray Lavanda Francesa. Um perfume elegante, limpo e sofisticado para ambientes que pedem calma e equilíbrio.",
   descricaoHtml: `
-    <h3>Kit Lucc Concept – Difusor e Spray Perfumador</h3>
+    <h3>Lavanda Francesa — Lucc Concept</h3>
+
     <p>
-      Sofisticação em dobro. O <strong>Kit Lucc Concept</strong> une o charme do difusor aromático com varetas e a praticidade do spray perfumador,
-      criando uma experiência sensorial completa para o seu lar ou espaço profissional.
+      <strong>Lavanda Francesa</strong> é elegância serena.
+      Um perfume criado para trazer equilíbrio, leveza e sensação de ordem,
+      como um espaço que respira calma e bom gosto.
     </p>
+
     <p>
-      O design minimalista em <em>vidro fumê</em> com acabamento metálico reflete elegância contemporânea, enquanto a fragrância exclusiva 
-      da Lucc Concept combina <strong>notas florais e amadeiradas</strong> que evocam tranquilidade, conforto e sofisticação duradoura.
+      Diferente da lavanda comum, esta interpretação é mais refinada,
+      limpa e sofisticada.
+      Nada de excessos adocicados ou notas agressivas —
+      aqui, a lavanda aparece com suavidade,
+      envolta em uma composição que transmite frescor,
+      conforto e sofisticação silenciosa.
+    </p>
+
+    <h4>A experiência</h4>
+    <p>
+      Lavanda Francesa se abre com frescor delicado,
+      quase translúcido,
+      e evolui para um corpo confortável e elegante,
+      que organiza o ambiente sem pesar.
+      É aquele perfume que traz sensação de limpeza emocional,
+      de espaço bem cuidado,
+      de rotina que flui.
+    </p>
+
+    <p>
+      Ideal para momentos de pausa,
+      leitura,
+      descanso
+      e ambientes que pedem serenidade com estilo.
+    </p>
+
+    <h4>O kit</h4>
+    <p>
+      O conjunto reúne um <strong>difusor de varetas</strong>
+      e um <strong>home spray</strong>,
+      permitindo ajustar a intensidade do perfume
+      de acordo com o momento e o espaço.
     </p>
 
     <ul>
-      <li>Essência autoral com blend floral e amadeirado</li>
-      <li>Design decorativo em vidro fumê com tampa metálica</li>
-      <li>Difusor com varetas + spray perfumador de ambiente</li>
-      <li>Ideal para recepções, salas e espaços corporativos</li>
-      <li>Produção artesanal e fragrância de longa duração</li>
+      <li>Difusor de varetas com perfume Lavanda Francesa;</li>
+      <li>Home spray com o mesmo perfume autoral;</li>
+      <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
+      <li>Volume: <strong>100 ml</strong> (cada item);</li>
+      <li>Perfume equilibrado, limpo e sofisticado.</li>
     </ul>
 
-    <h4>Ficha Técnica</h4>
-    <table class="tabela-ficha">
-      <tr><th>Produto</th><td>Kit Difusor + Spray Perfumador</td></tr>
-      <tr><th>Marca</th><td>Lucc Concept</td></tr>
-      <tr><th>Categoria</th><td>Aromatizadores de ambiente</td></tr>
-      <tr><th>Fragrância</th><td>Notas florais e amadeiradas</td></tr>
-      <tr><th>Volume</th><td>250 ml (difusor) + 200 ml (spray)</td></tr>
-      <tr><th>Material</th><td>Vidro fumê, tampa metálica e varetas naturais</td></tr>
-      <tr><th>Duração</th><td>Até 90 dias o difusor / uso diário o spray</td></tr>
-      <tr><th>Produção</th><td>Artesanal, sob demanda</td></tr>
-      <tr><th>Origem</th><td>Feito no Brasil</td></tr>
-    </table>
-
-    <h4>Modo de Uso</h4>
+    <h4>Por que escolher Lavanda Francesa?</h4>
     <ul>
-      <li>Coloque as varetas no frasco do difusor e vire-as a cada 2 dias para renovar o aroma.</li>
-      <li>Use o spray para reforçar o perfume em momentos específicos ou em tecidos e cortinas.</li>
-      <li>Evite exposição direta ao sol e mantenha fora do alcance de crianças e animais.</li>
+      <li>Promove sensação imediata de calma e bem-estar;</li>
+      <li>Perfume limpo e elegante, nunca invasivo;</li>
+      <li>Ideal para quartos, lavabos, salas e espaços de relaxamento;</li>
+      <li>Excelente para quem busca equilíbrio no dia a dia;</li>
+      <li>Qualidade autoral Lucc Concept.</li>
     </ul>
+
+    <h4>Para quem é</h4>
+    <p>
+      Para quem aprecia ambientes tranquilos,
+      organizados e acolhedores.
+      Para quem entende que o verdadeiro luxo
+      também mora no silêncio,
+      na leveza
+      e na sensação de paz que fica.
+    </p>
+    <small> *Imagens meramente ilustrativas.</small>
 
     <p class="seo">
-      Palavras-chave: kit aromatizador de luxo, difusor e spray perfumador, fragrância floral amadeirada, decoração sofisticada,
-      Lucc Concept, aromatizadores artesanais, home decor elegante, bem-estar olfativo.
+      Palavras-chave: lavanda francesa, difusor de varetas,
+      home spray Lucc Concept, perfume autoral,
+      perfume limpo e sofisticado, aromatizador elegante,
+      decoração sensorial, bem-estar.
     </p>
   `
 },
+{
+  nome: "Lavanda Francesa — Difusor + Home Spray - 200ml",
+  tipo: "aromatizadores",
+  colecao: "Lucc Concept",
+  quantidade: "kit",
+  preco: 0, // defina o valor final
+  imagens: [
+    "imagens/dhgrlav.png"
+  ],
+  descricao: "Difusor de varetas e home spray Lavanda Francesa. Um perfume elegante, limpo e sofisticado para ambientes que pedem calma e equilíbrio.",
+  descricaoHtml: `
+    <h3>Lavanda Francesa — Lucc Concept</h3>
+
+    <p>
+      <strong>Lavanda Francesa</strong> é elegância serena.
+      Um perfume criado para trazer equilíbrio, leveza e sensação de ordem,
+      como um espaço que respira calma e bom gosto.
+    </p>
+
+    <p>
+      Diferente da lavanda comum, esta interpretação é mais refinada,
+      limpa e sofisticada.
+      Nada de excessos adocicados ou notas agressivas —
+      aqui, a lavanda aparece com suavidade,
+      envolta em uma composição que transmite frescor,
+      conforto e sofisticação silenciosa.
+    </p>
+
+    <h4>A experiência</h4>
+    <p>
+      Lavanda Francesa se abre com frescor delicado,
+      quase translúcido,
+      e evolui para um corpo confortável e elegante,
+      que organiza o ambiente sem pesar.
+      É aquele perfume que traz sensação de limpeza emocional,
+      de espaço bem cuidado,
+      de rotina que flui.
+    </p>
+
+    <p>
+      Ideal para momentos de pausa,
+      leitura,
+      descanso
+      e ambientes que pedem serenidade com estilo.
+    </p>
+
+    <h4>O kit</h4>
+    <p>
+      O conjunto reúne um <strong>difusor de varetas</strong>
+      e um <strong>home spray</strong>,
+      permitindo ajustar a intensidade do perfume
+      de acordo com o momento e o espaço.
+    </p>
+
+    <ul>
+      <li>Difusor de varetas com perfume Lavanda Francesa;</li>
+      <li>Home spray com o mesmo perfume autoral;</li>
+      <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
+      <li>Volume: <strong>200 ml</strong> (cada item);</li>
+      <li>Perfume equilibrado, limpo e sofisticado.</li>
+    </ul>
+
+    <h4>Por que escolher Lavanda Francesa?</h4>
+    <ul>
+      <li>Promove sensação imediata de calma e bem-estar;</li>
+      <li>Perfume limpo e elegante, nunca invasivo;</li>
+      <li>Ideal para quartos, lavabos, salas e espaços de relaxamento;</li>
+      <li>Excelente para quem busca equilíbrio no dia a dia;</li>
+      <li>Qualidade autoral Lucc Concept.</li>
+    </ul>
+
+    <h4>Para quem é</h4>
+    <p>
+      Para quem aprecia ambientes tranquilos,
+      organizados e acolhedores.
+      Para quem entende que o verdadeiro luxo
+      também mora no silêncio,
+      na leveza
+      e na sensação de paz que fica.
+    </p>
+    <small> *Imagens meramente ilustrativas.</small>
+
+    <p class="seo">
+      Palavras-chave: lavanda francesa, difusor de varetas,
+      home spray Lucc Concept, perfume autoral,
+      perfume limpo e sofisticado, aromatizador elegante,
+      decoração sensorial, bem-estar.
+    </p>
+  `
+},
+
+
   
    {
-  nome: "Silêncio Dourado",
-  tipo: "obras",
-  quantidade: "peca-unica",
-  preco: 897,
-  imagens: ["imagens/mockuploira1.png"],
-  descricao: "Versão curta para listagem/cartões.",
+  nome: "Bamboo — Difusor + Home Spray - 100ml",
+  tipo: "aromatizadores",
+  colecao: "Lucc Concept",
+  quantidade: "kit",
+  preco: 0, // defina o valor final
+  imagens: [
+    "imagens/dhpeqbamboo.png"
+  ],
+  descricao: "Difusor de varetas e home spray Bamboo. Um perfume verde, limpo e contemporâneo para ambientes que pedem frescor elegante.",
   descricaoHtml: `
-    <h3>“Silêncio Dourado” — Série Glam Essence</h3>
-    <p>De olhos fechados e expressão serena, <strong>“Silêncio Dourado”</strong> captura a essência da feminilidade atemporal. Ideal para ambientes sofisticados, galerias e espaços corporativos.</p>
+    <h3>Bamboo — Lucc Concept</h3>
+
+    <p>
+      <strong>Bamboo</strong> é frescor com intenção.
+      Um perfume criado para trazer leveza, organização e sensação de espaço,
+      como um ambiente que respira bem-estar e modernidade.
+    </p>
+
+    <p>
+      Verde, limpo e equilibrado,
+      Bamboo traduz a ideia de natureza urbana —
+      aquele frescor que convive com concreto, vidro e linhas contemporâneas,
+      sem perder sofisticação.
+    </p>
+
+    <h4>A experiência</h4>
+    <p>
+      Bamboo se abre com notas verdes transparentes,
+      trazendo sensação imediata de ar renovado.
+      Ao evoluir, revela um corpo suave e confortável,
+      que permanece no ambiente de forma elegante,
+      sem pesar e sem cansar.
+    </p>
+
+    <p>
+      É um perfume que organiza o espaço.
+      Ideal para quem gosta de ambientes claros,
+      funcionais e visualmente limpos.
+    </p>
+
+    <h4>O kit</h4>
+    <p>
+      O conjunto reúne um <strong>difusor de varetas</strong>
+      e um <strong>home spray</strong>,
+      permitindo reforçar o perfume pontualmente
+      ou manter uma presença constante no ambiente.
+    </p>
 
     <ul>
-      <li>Impressão Fine Art em alta resolução</li>
-      <li>Acabamento com proteção UV fosca</li>
-      <li>Produção artesanal no Brasil</li>
+      <li>Difusor de varetas com perfume Bamboo;</li>
+      <li>Home spray com o mesmo perfume autoral;</li>
+      <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
+      <li>Volume: <strong>100 ml</strong> (cada item);</li>
+      <li>Perfume verde, limpo e contemporâneo.</li>
     </ul>
 
-    <h4>Ficha Técnica</h4>
-    <table class="tabela-ficha">
-      <tr><th>Título</th><td>Silêncio Dourado</td></tr>
-      <tr><th>Artista</th><td>Aline Bontempo</td></tr>
-      <tr><th>Coleção</th><td>Glam Essence</td></tr>
-      <tr><th>Técnica</th><td>Ilustração digital sobre fundo texturizado</td></tr>
-      <tr><th>Dimensões</th><td>45x30, 75x50, 100x75 cm</td></tr>
-      <tr><th>Suporte</th><td>Tela de algodão ou papel Fine Art 310g</td></tr>
-      <tr><th>Acabamento</th><td>Verniz protetor UV (fosco)</td></tr>
-      <tr><th>Assinatura</th><td>Digital + certificado</td></tr>
-      <tr><th>Edição</th><td>Limitada e numerada</td></tr>
-      <tr><th>Produção</th><td>Sob demanda</td></tr>
-    </table>
+    <h4>Por que escolher Bamboo?</h4>
+    <ul>
+      <li>Cria sensação de frescor imediato;</li>
+      <li>Perfume limpo, elegante e nada invasivo;</li>
+      <li>Combina com ambientes modernos e minimalistas;</li>
+      <li>Excelente para salas, escritórios, lavabos e recepções;</li>
+      <li>Qualidade autoral Lucc Concept.</li>
+    </ul>
 
-    <p class="seo">Palavras-chave: arte feminina moderna, ilustração fine art, quadro decorativo elegante, arte digital contemporânea, arte autoral brasileira.</p>
+    <h4>Para quem é</h4>
+    <p>
+      Para quem gosta de ambientes claros,
+      organizados e contemporâneos.
+      Para quem busca frescor elegante no dia a dia,
+      sem excessos
+      e sem obviedade.
+    </p>
+    <small> *Imagens meramente ilustrativas.</small>
+
+    <p class="seo">
+      Palavras-chave: bamboo, difusor de varetas,
+      home spray Lucc Concept, perfume verde,
+      aromatizador contemporâneo, frescor elegante,
+      decoração minimalista, bem-estar.
+    </p>
   `
 },
 
 {
-  nome: "Coleção Urbano – London + New York City + Kit Aromas",
-  tipo: "colecoes",
-  quantidade: "kit-completo",
-  preco: 2397,
-  imagens: ["imagens/colecaourbanokit.png",
-    "imagens/newyork.png",
-    "imagens/london.png"
+  nome: "Bamboo — Difusor + Home Spray - 200ml",
+  tipo: "aromatizadores",
+  colecao: "Lucc Concept",
+  quantidade: "kit",
+  preco: 0, // defina o valor final
+  imagens: [
+    "imagens/dhgrbamboo.png"
   ],
-  descricao: "Duas obras da série Urbano em moldura preta + kit difusor e spray com logo Lucc Concept — elegância minimalista para ambientes sofisticados.",
-
+  descricao: "Difusor de varetas e home spray Bamboo. Um perfume verde, limpo e contemporâneo para ambientes que pedem frescor elegante.",
   descricaoHtml: `
-    <h3>Coleção Urbano – London & New York City + Kit Aromatizadores</h3>
+    <h3>Bamboo — Lucc Concept</h3>
+
     <p>
-      Uma curadoria que une <strong>arte e atmosfera</strong>. A Coleção <em>Urbano</em> apresenta as obras 
-      <strong>London</strong> e <strong>New York City</strong> emolduradas em preto, lado a lado, 
-      compondo um cenário minimalista com <em>cores neutras</em>. Abaixo, o <strong>kit de aromatizadores</strong> 
-      (difusor com varetas + spray) com o <strong>logo Lucc Concept</strong> aplicado nos frascos reforça o
-      caráter premium do conjunto e cria uma experiência sensorial completa.
+      <strong>Bamboo</strong> é frescor com intenção.
+      Um perfume criado para trazer leveza, organização e sensação de espaço,
+      como um ambiente que respira bem-estar e modernidade.
+    </p>
+
+    <p>
+      Verde, limpo e equilibrado,
+      Bamboo traduz a ideia de natureza urbana —
+      aquele frescor que convive com concreto, vidro e linhas contemporâneas,
+      sem perder sofisticação.
+    </p>
+
+    <h4>A experiência</h4>
+    <p>
+      Bamboo se abre com notas verdes transparentes,
+      trazendo sensação imediata de ar renovado.
+      Ao evoluir, revela um corpo suave e confortável,
+      que permanece no ambiente de forma elegante,
+      sem pesar e sem cansar.
+    </p>
+
+    <p>
+      É um perfume que organiza o espaço.
+      Ideal para quem gosta de ambientes claros,
+      funcionais e visualmente limpos.
+    </p>
+
+    <h4>O kit</h4>
+    <p>
+      O conjunto reúne um <strong>difusor de varetas</strong>
+      e um <strong>home spray</strong>,
+      permitindo reforçar o perfume pontualmente
+      ou manter uma presença constante no ambiente.
     </p>
 
     <ul>
-      <li>Dois pôsteres Fine Art da série <strong>Urbano</strong> (London + New York City)</li>
-      <li>Molduras pretas idênticas, passe-partout claro e vidro protetor</li>
-      <li>Kit aromático: difusor com varetas + spray com logo Lucc Concept</li>
-      <li>Ambiente minimalista: estética limpa, tons neutros e sofisticação discreta</li>
-      <li>Produção artesanal e acabamento de alto padrão</li>
+      <li>Difusor de varetas com perfume Bamboo;</li>
+      <li>Home spray com o mesmo perfume autoral;</li>
+      <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
+      <li>Volume: <strong>200 ml</strong> (cada item);</li>
+      <li>Perfume verde, limpo e contemporâneo.</li>
     </ul>
 
-    <h4>Ficha Técnica – Obras</h4>
-    <table class="tabela-ficha">
-      <tr><th>Títulos</th><td>London • New York City</td></tr>
-      <tr><th>Coleção</th><td>Urbano</td></tr>
-      <tr><th>Artista</th><td>Aline Bontempo</td></tr>
-      <tr><th>Técnica</th><td>Ilustração digital sobre fundo texturizado</td></tr>
-      <tr><th>Dimensões</th><td>45x30, 75x50, 100x75 cm (cada)</td></tr>
-      <tr><th>Impressão</th><td>Fine Art em alta resolução</td></tr>
-      <tr><th>Moldura</th><td>Preta, perfil fino, com passe-partout</td></tr>
-      <tr><th>Proteção</th><td>Vidro/lâmina com proteção UV (fosco)</td></tr>
-      <tr><th>Assinatura</th><td>Digital + certificado de autenticidade</td></tr>
-      <tr><th>Edição</th><td>Limitada e numerada</td></tr>
-      <tr><th>Produção</th><td>Sob demanda</td></tr>
-    </table>
-
-    <h4>Ficha Técnica – Kit Aromas</h4>
-    <table class="tabela-ficha">
-      <tr><th>Itens</th><td>Difusor com varetas + Spray Perfumador</td></tr>
-      <tr><th>Frascos</th><td>Vidro preto com tampas douradas e logo Lucc Concept</td></tr>
-      <tr><th>Fragrância</th><td>Notas florais e amadeiradas (essência autoral)</td></tr>
-      <tr><th>Volume</th><td>250 ml (difusor) • 200 ml (spray)</td></tr>
-      <tr><th>Duração</th><td>Até 90 dias o difusor • uso diário o spray</td></tr>
-      <tr><th>Origem</th><td>Produção artesanal no Brasil</td></tr>
-    </table>
-
-    <h4>Modo de Uso – Aromatizadores</h4>
+    <h4>Por que escolher Bamboo?</h4>
     <ul>
-      <li>Insira as varetas no difusor e vire-as a cada 2–3 dias para renovar o aroma.</li>
-      <li>Use o spray para reforçar a perfumação pontual em tecidos e ambientes.</li>
-      <li>Mantenha longe de luz solar direta e do alcance de crianças e pets.</li>
+      <li>Cria sensação de frescor imediato;</li>
+      <li>Perfume limpo, elegante e nada invasivo;</li>
+      <li>Combina com ambientes modernos e minimalistas;</li>
+      <li>Excelente para salas, escritórios, lavabos e recepções;</li>
+      <li>Qualidade autoral Lucc Concept.</li>
     </ul>
+
+    <h4>Para quem é</h4>
+    <p>
+      Para quem gosta de ambientes claros,
+      organizados e contemporâneos.
+      Para quem busca frescor elegante no dia a dia,
+      sem excessos
+      e sem obviedade.
+    </p>
+    <small> *Imagens meramente ilustrativas.</small>
 
     <p class="seo">
-      Palavras-chave: coleção urbano, posters cidade, London e New York City, moldura preta minimalista,
-      kit aromatizador luxo, difusor e spray com logo, decoração sofisticada, Lucc Concept, arte contemporânea, home decor neutro.
+      Palavras-chave: bamboo, difusor de varetas,
+      home spray Lucc Concept, perfume verde,
+      aromatizador contemporâneo, frescor elegante,
+      decoração minimalista, bem-estar.
     </p>
   `
-}
+},
+{
+  nome: "QUASE — Fine Art",
+  tipo: "obras",
+  colecao: "Autoral",
+  quantidade: "obra-unica",
+  preco: 0, // defina o valor final
+  imagens: [
+    "imagens/galeria.png",
+    "imagens/ilustração3.png",
+   ],
+  descricao: "Uma pausa antes do gesto. Um instante suspenso entre desejo e silêncio.",
+  descricaoHtml: `
+    <h3>QUASE — Fine Art</h3>
+
+    <p>
+      <strong>QUASE</strong> é o instante em que tudo hesita.
+      O tempo diminui o passo,
+      o desejo respira,
+      e nada ainda acontece.
+    </p>
+
+    <p>
+      Uma obra de atmosfera noir,
+      onde luz e sombra se aproximam
+      da mesma forma que os corpos —
+      sem pressa,
+      sem ruído,
+      sem explicação.
+    </p>
+
+    <h4>A obra</h4>
+    <p>
+      Criada a partir de ilustração autoral,
+      <strong>QUASE</strong> trabalha o espaço do não-dito:
+      o intervalo entre um gesto e outro,
+      onde a tensão é mais intensa do que o toque.
+    </p>
+
+    <ul>
+      <li>Impressão <strong>Fine Art</strong> de alta qualidade;</li>
+      <li>Contraste profundo e leitura sofisticada;</li>
+      <li>Textura pensada para atmosfera de galeria;</li>
+      <li>Obra autoral Lucc Concept.</li>
+    </ul>
+
+    <h4>Ficha Técnica</h4>
+    <table class="tabela-ficha">
+      <tr><th>Técnica</th><td>Ilustração digital autoral</td></tr>
+      <tr><th>Impressão</th><td>Fine Art de alta qualidade</td></tr>
+      <tr><th>Formato</th><td>Vertical</td></tr>
+      <tr><th>Produção</th><td>Sob demanda</td></tr>
+      <tr><th>Certificado</th><td>Acompanha certificado de autenticidade</td></tr>
+    </table>
+
+    <h4>Para quem é</h4>
+    <p>
+      Para quem entende que arte não precisa explicar.
+      Para quem sente antes de compreender.
+      Para ambientes que pedem silêncio,
+      profundidade
+      e presença.
+    </p>
+
+    <p class="seo">
+      Palavras-chave: obra quase, fine art noir, arte autoral brasileira,
+      arte contemporânea, casal noir, quase beijo, Lucc Concept, arte sensorial.
+    </p>
+  `
+},
+
+{
+  nome: "Vanilla Home — Difusor + Home Spray - 100ml",
+  tipo: "aromatizadores",
+  colecao: "Lucc Concept",
+  quantidade: "kit",
+  preco: 0, // defina o valor final
+  imagens: [
+    "imagens/dhpeqvanilla.png"
+  ],
+  descricao: "Difusor de varetas e home spray Vanilla Home. Um perfume cremoso, acolhedor e sofisticado para ambientes que pedem conforto elegante.",
+  descricaoHtml: `
+    <h3>Vanilla Home — Lucc Concept</h3>
+
+    <p>
+      <strong>Vanilla Home</strong> é conforto elevado.
+      Um perfume criado para acolher,
+      envolver
+      e transformar o ambiente em refúgio —
+      elegante, calmo e profundamente agradável.
+    </p>
+
+    <p>
+      Aqui, a baunilha aparece em sua versão mais adulta e sofisticada.
+      Nada de doçura excessiva ou notas artificiais.
+      Vanilla Home é cremosa, macia e equilibrada,
+      com fundo quente que transmite cuidado e permanência.
+    </p>
+
+    <h4>A experiência</h4>
+    <p>
+      A abertura é suave e envolvente,
+      trazendo sensação imediata de aconchego.
+      Ao evoluir, o perfume ganha corpo,
+      permanecendo no ambiente de forma confortável,
+      elegante
+      e silenciosamente marcante.
+    </p>
+
+    <p>
+      É o tipo de perfume que transforma a rotina em ritual:
+      chegar em casa,
+      fechar a porta,
+      respirar fundo.
+    </p>
+
+    <h4>O kit</h4>
+    <p>
+      O conjunto reúne um <strong>difusor de varetas</strong>
+      e um <strong>home spray</strong>,
+      permitindo controlar a intensidade do perfume
+      de acordo com o momento e o espaço.
+    </p>
+
+    <ul>
+      <li>Difusor de varetas com perfume Vanilla Home;</li>
+      <li>Home spray com o mesmo perfume autoral;</li>
+      <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
+      <li>Volume: <strong>100 ml</strong> (cada item);</li>
+      <li>Perfume cremoso, elegante e acolhedor.</li>
+    </ul>
+
+    <h4>Por que escolher Vanilla Home?</h4>
+    <ul>
+      <li>Cria sensação imediata de conforto e acolhimento;</li>
+      <li>Baunilha sofisticada, adulta e nada enjoativa;</li>
+      <li>Ideal para salas, quartos e espaços de descanso;</li>
+      <li>Perfume que permanece sem invadir;</li>
+      <li>Qualidade autoral Lucc Concept.</li>
+    </ul>
+
+    <h4>Para quem é</h4>
+    <p>
+      Para quem ama a sensação de casa bem cuidada.
+      Para quem valoriza conforto,
+      calor emocional
+      e perfumes que abraçam
+      sem excesso.
+    </p>
+    <small> *Imagens meramente ilustrativas.</small>
+
+    <p class="seo">
+      Palavras-chave: vanilla home, difusor de varetas,
+      home spray Lucc Concept, perfume de baunilha sofisticado,
+      aromatizador acolhedor, decoração sensorial,
+      bem-estar e conforto.
+    </p>
+  `
+},
+
+{
+  nome: "Vanilla Home — Difusor + Home Spray - 200ml",
+  tipo: "aromatizadores",
+  colecao: "Lucc Concept",
+  quantidade: "kit",
+  preco: 0, // defina o valor final
+  imagens: [
+    "imagens/dhgrvanilla.png"
+  ],
+  descricao: "Difusor de varetas e home spray Vanilla Home. Um perfume cremoso, acolhedor e sofisticado para ambientes que pedem conforto elegante.",
+  descricaoHtml: `
+    <h3>Vanilla Home — Lucc Concept</h3>
+
+    <p>
+      <strong>Vanilla Home</strong> é conforto elevado.
+      Um perfume criado para acolher,
+      envolver
+      e transformar o ambiente em refúgio —
+      elegante, calmo e profundamente agradável.
+    </p>
+
+    <p>
+      Aqui, a baunilha aparece em sua versão mais adulta e sofisticada.
+      Nada de doçura excessiva ou notas artificiais.
+      Vanilla Home é cremosa, macia e equilibrada,
+      com fundo quente que transmite cuidado e permanência.
+    </p>
+
+    <h4>A experiência</h4>
+    <p>
+      A abertura é suave e envolvente,
+      trazendo sensação imediata de aconchego.
+      Ao evoluir, o perfume ganha corpo,
+      permanecendo no ambiente de forma confortável,
+      elegante
+      e silenciosamente marcante.
+    </p>
+
+    <p>
+      É o tipo de perfume que transforma a rotina em ritual:
+      chegar em casa,
+      fechar a porta,
+      respirar fundo.
+    </p>
+
+    <h4>O kit</h4>
+    <p>
+      O conjunto reúne um <strong>difusor de varetas</strong>
+      e um <strong>home spray</strong>,
+      permitindo controlar a intensidade do perfume
+      de acordo com o momento e o espaço.
+    </p>
+
+    <ul>
+      <li>Difusor de varetas com perfume Vanilla Home;</li>
+      <li>Home spray com o mesmo perfume autoral;</li>
+      <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
+      <li>Volume: <strong>200 ml</strong> (cada item);</li>
+      <li>Perfume cremoso, elegante e acolhedor.</li>
+    </ul>
+
+    <h4>Por que escolher Vanilla Home?</h4>
+    <ul>
+      <li>Cria sensação imediata de conforto e acolhimento;</li>
+      <li>Baunilha sofisticada, adulta e nada enjoativa;</li>
+      <li>Ideal para salas, quartos e espaços de descanso;</li>
+      <li>Perfume que permanece sem invadir;</li>
+      <li>Qualidade autoral Lucc Concept.</li>
+    </ul>
+
+    <h4>Para quem é</h4>
+    <p>
+      Para quem ama a sensação de casa bem cuidada.
+      Para quem valoriza conforto,
+      calor emocional
+      e perfumes que abraçam
+      sem excesso.
+    </p>
+    <small> *Imagens meramente ilustrativas.</small>
+
+    <p class="seo">
+      Palavras-chave: vanilla home, difusor de varetas,
+      home spray Lucc Concept, perfume de baunilha sofisticado,
+      aromatizador acolhedor, decoração sensorial,
+      bem-estar e conforto.
+    </p>
+  `
+},
 
 ];
 
-// -------------------------------
-// 🛒 Carrinho e renderização
-// -------------------------------
-let carrinho = [];
 
-// Atualiza contador e total
-function atualizarCarrinho() {
-  const contador = document.getElementById("contadorCarrinho");
-  const totalCarrinho = document.getElementById("totalCarrinho");
-  const itensCarrinho = document.getElementById("itensCarrinho");
-
-  if (!contador) return;
-
-  contador.textContent = carrinho.length;
-  if (itensCarrinho && totalCarrinho) {
-    itensCarrinho.innerHTML = "";
-    let total = 0;
-    carrinho.forEach((item, i) => {
-      total += item.preco;
-      itensCarrinho.innerHTML += `
-        <div class="item-carrinho">
-          <img src="${item.imagem}" alt="${item.nome}">
-          <span>${item.nome}</span>
-          <strong>R$ ${item.preco.toFixed(2)}</strong>
-          <button onclick="removerItem(${i})">❌</button>
-        </div>
-      `;
-    });
-    totalCarrinho.textContent = `Total: R$ ${total.toFixed(2)}`;
-  }
-}
-
-// Remover item
-function removerItem(index) {
-  carrinho.splice(index, 1);
-  atualizarCarrinho();
-}
 
 // -------------------------------
 // 🧱 Renderizar produtos na loja
@@ -546,62 +1173,3 @@ document.addEventListener('click', (e) => {
 
 
 
-// === BOTÃO "COMPRAR" NO CARD ===
-document.addEventListener('click', (e) => {
-  if (e.target.classList.contains('btn-comprar')) {
-    const card = e.target.closest('.produto-card');
-    const nome = card.querySelector('h3').textContent;
-    const produto = produtos.find((p) => p.nome === nome);
-    if (produto) {
-      carrinho.push(produto);
-      atualizarCarrinho();
-
-      // Feedback visual
-      const contador = document.getElementById('contadorCarrinho');
-      contador.classList.add('contador-ativo');
-      setTimeout(() => contador.classList.remove('contador-ativo'), 500);
-    }
-  }
-});
-
-// === ABRIR CARRINHO ===
-const btnCarrinho = document.getElementById('btnCarrinho');
-btnCarrinho?.addEventListener('click', () => modalCarrinho.show());
-
-// === FINALIZAR COMPRA ===
-const finalizarCompraBtn = document.getElementById('finalizarCompra');
-finalizarCompraBtn?.addEventListener('click', () => {
-  if (carrinho.length === 0) return;
-  modalCarrinho.hide();
-  modalCheckout.show();
-
-  const resumo = document.getElementById('resumoCheckout');
-  resumo.innerHTML = '';
-  carrinho.forEach(item => {
-    resumo.innerHTML += `<div><span>${item.nome}</span><span>R$ ${item.preco.toFixed(2)}</span></div>`;
-  });
-});
-
-// === CONFIRMAR PEDIDO ===
-const formCheckout = document.getElementById('formCheckout');
-formCheckout?.addEventListener('submit', (e) => {
-  e.preventDefault();
-  modalCheckout.hide();
-  modalConfirmacao.show();
-
-  const numPedido = Math.floor(Math.random() * 1000000);
-  document.getElementById('numeroPedido').textContent = `#${numPedido}`;
-
-  const resumoConfirmacao = document.getElementById('resumoConfirmacao');
-  resumoConfirmacao.innerHTML = '';
-  carrinho.forEach(item => {
-    resumoConfirmacao.innerHTML += `<div><strong>${item.nome}</strong> — R$ ${item.preco.toFixed(2)}</div>`;
-  });
-
-  const nomeCliente = document.getElementById('nomeCliente').value;
-  const linkWhats = `https://wa.me/5599999999999?text=Olá, sou ${nomeCliente} e quero acompanhar o pedido #${numPedido}`;
-  document.getElementById('whatsPedido').href = linkWhats;
-
-  carrinho.length = 0;
-  atualizarCarrinho();
-});
