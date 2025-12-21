@@ -13,7 +13,7 @@ const produtos = [
   {
   nome: "Sopro de âmbar – Fine Art",
   tipo: "obras",
-  quantidade: "peca-unica",
+  quantidade: "kit-completo",
   preco: 987,
   imagens: [
     "imagens/soproambar.png"
@@ -62,7 +62,91 @@ As linhas que a moldam são veias de luz e sombra, pulsando com o mesmo ritmo da
   `
 },
 
-  {
+{
+  nome: "Kit Coleção Urbanos – 3 Fine Arts + Difusor + Home Spray",
+  tipo: "kit-colecao",
+  colecao: "Urbanos",
+  quantidade: "sob-encomenda", // pode mudar p/ 'limitado', 'peca-unica', etc.
+  preco: 0, //  definir depois: coloque o valor final aqui
+  imagens: [
+    "imagens/urbanos-kit.png" // mockup do kit completo (3 quadros + aromatizadores)
+  ],
+  descricao: "Um encontro entre cidades, luzes e memórias: três obras fine art + difusor de varetas + home spray para transformar o ambiente em uma experiência urbana completa.",
+  descricaoHtml: `
+    <h3>Coleção Urbanos – Kit completo</h3>
+    <p>
+      Três cidades, três atmosferas, um mesmo desejo: <strong>viver intensamente cada ambiente</strong>.
+      A Coleção <strong>Urbanos</strong> reúne Paris, Nova York e Londres em obras fine art autorais,
+      acompanhadas de um difusor de varetas e um home spray que ampliam a experiência para além do olhar.
+      É décor, é aroma, é memória em movimento.
+    </p>
+
+    <h4>O que vem no kit</h4>
+    <ul>
+      <li>01 obra <strong>Paris</strong> – Fine Art com moldura preta;</li>
+      <li>01 obra <strong>Nova York</strong> – Fine Art com moldura preta;</li>
+      <li>01 obra <strong>Londres</strong> – Fine Art com moldura preta;</li>
+      <li>01 <strong>difusor de varetas</strong> da Coleção Urbanos;</li>
+      <li>01 <strong>home spray</strong> da Coleção Urbanos.</li>
+    </ul>
+
+    <h4>Tamanhos das obras</h4>
+    <p>
+      As três obras foram pensadas para compor uma mesma parede ou dialogarem entre ambientes diferentes:
+    </p>
+    <ul>
+      <li><strong>30 x 40 cm</strong></li>
+      <li><strong>40 x 50 cm</strong></li>
+      <li><strong>60 x 80 cm</strong></li>
+    </ul>
+    <p>
+      Você pode combinar os tamanhos de acordo com o projeto de décor, criando um ponto focal ou uma composição em galeria.
+    </p>
+
+    <h4>Ficha Técnica – Obras</h4>
+    <table class="tabela-ficha">
+      <tr><th>Coleção</th><td>Urbanos</td></tr>
+      <tr><th>Obras</th><td>Paris • Nova York • Londres</td></tr>
+      <tr><th>Técnica</th><td>Ilustração digital autoral</td></tr>
+      <tr><th>Impressão indicada</th><td>Fine Art em papel 310g ou canvas premium</td></tr>
+      <tr><th>Tamanhos sugeridos</th><td>30x40 • 40x50 • 60x80 cm</td></tr>
+      <tr><th>Moldura</th><td>Moldura preta, acabamento elegante e contemporâneo</td></tr>
+      <tr><th>Produção</th><td>Sob demanda</td></tr>
+      <tr><th>Certificado</th><td>Acompanha certificado de autenticidade Lucc Concept</td></tr>
+    </table>
+
+    <h4>Ficha Técnica – Aromatizadores</h4>
+    <table class="tabela-ficha">
+      <tr><th>Itens</th><td>Difusor de varetas + Home spray</td></tr>
+      <tr><th>Coleção</th><td>Urbanos</td></tr>
+      <tr><th>Uso</th><td>Ambientes internos</td></tr>
+      <tr><th>Conceito</th><td>Fragrâncias pensadas para acompanhar a estética das obras e criar uma experiência sensorial completa</td></tr>
+    </table>
+
+    <h4>Por que esse kit funciona no décor?</h4>
+    <ul>
+      <li>Integra <strong>arte e aroma</strong> em uma única proposta;</li>
+      <li>Cores e composições inspiradas em grandes cidades, perfeitas para ambientes contemporâneos;</li>
+      <li>Moldura preta que traz sofisticação e dialoga com diferentes paletas de parede;</li>
+      <li>Cria um <strong>ponto de destaque</strong> em salas, halls, escritórios e espaços criativos;</li>
+      <li>Ideal para quem busca um ambiente com identidade, história e presença.</li>
+    </ul>
+
+    <h4>Para quem é</h4>
+    <p>
+      Para quem ama cidades, luzes, janelas acesas e histórias que começam em uma esquina qualquer.
+      Para quem quer <strong>um ambiente que pareça um cenário de filme</strong>, com arte na parede e fragrância no ar.
+      Um kit feito para quem entende que a casa também é um mapa dos lugares que moram dentro da gente.
+    </p>
+
+    <p class="seo">
+      Palavras-chave: coleção Urbanos, kit decoração, quadros com moldura preta, difusor de varetas, home spray,
+      fine art autoral, decoração contemporânea, Lucc Concept, arte e fragrância.
+    </p>
+  `
+},
+
+{
   nome: "Echo Strawberry – Fine Art",
   tipo: "obras",
   quantidade: "peca-unica",
