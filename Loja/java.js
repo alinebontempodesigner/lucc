@@ -14,7 +14,7 @@ const produtos = [
   nome: "Coleção completa - Rastro",
   tipo: "kit-colecao",
   quantidade: "Rastro",
-  preco: 987,
+  preco: 1980,
   imagens: [
     "imagens/Sala Rastro.jpg",
     "imagens/ilustração4 (2).png",
@@ -99,11 +99,12 @@ const produtos = [
 },
 
 {
-  nome: "Wave After Wave – Kit Automotivo",
+  nome: "Wave After Wave – Kit Assinatura Automotivo",
   tipo: "aromatizadores",
   colecao: "Wave After Wave",
   quantidade: "kit",
-  preco: 0, // defina o valor final aqui
+  preco: 369,
+  badge: "Edição Limitada",
   imagens: [
     "imagens/wawcarro1.png",
     "imagens/wawcarro2.png",
@@ -199,100 +200,17 @@ const produtos = [
 
 
 {
-  nome: "Figo Caramel — Difusor + Home Spray - 100ml",
+  nome: "Figo Caramel — Difusor + Home Spray - 200ml",
   tipo: "aromatizadores",
   colecao: "Lucc Concept",
   quantidade: "kit",
-  preco: 0, // defina o valor final
+  preco: 189, 
   imagens: [
     "imagens/dhpeqsala.png",
     "imagens/dhpeq.png",
   ],
   descricao: "Difusor de varetas e home spray Figo Caramel. Um perfume envolvente, confortável e elegante para o dia a dia.",
   
-  descricaoHtml: `
-    <h3>Figo Caramel — Lucc Concept</h3>
-
-    <p>
-      <strong>Figo Caramel</strong> é presença acolhedora.
-      Um perfume criado para acompanhar o cotidiano com elegância,
-      trazendo a sensação de casa bem cuidada,
-      conforto imediato e atmosfera envolvente.
-    </p>
-
-    <p>
-      A união do figo com notas adocicadas e cremosas
-      cria um perfume quente, equilibrado e sofisticado.
-      Doce na medida certa,
-      sem excessos,
-      com aquele fundo que convida a permanecer.
-    </p>
-
-    <h4>A experiência</h4>
-    <p>
-      Figo Caramel se revela aos poucos.
-      A abertura frutada é suave e elegante,
-      evoluindo para um corpo mais quente e confortável,
-      que envolve o ambiente sem saturar.
-      Um perfume fácil de amar,
-      pensado para uso diário,
-      mas com personalidade.
-    </p>
-
-    <h4>O kit</h4>
-    <p>
-      O conjunto reúne um <strong>difusor de varetas</strong>
-      e um <strong>home spray</strong>,
-      permitindo controlar a intensidade
-      e manter o ambiente sempre agradável,
-      com o mesmo perfume autoral da coleção.
-    </p>
-
-    <ul>
-      <li>Difusor de varetas com perfume Figo Caramel;</li>
-      <li>Home spray com o mesmo perfume;</li>
-      <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
-      <li>Volume: <strong>100 ml</strong> (cada item);</li>
-      <li>Perfume confortável, elegante e de alta qualidade.</li>
-    </ul>
-
-    <h4>Por que escolher Figo Caramel?</h4>
-    <ul>
-      <li>Cria atmosfera acolhedora e sofisticada;</li>
-      <li>Perfume adocicado equilibrado, nunca enjoativo;</li>
-      <li>Funciona bem em diferentes ambientes;</li>
-      <li>Ideal para quem busca elegância no cotidiano;</li>
-      <li>Qualidade autoral Lucc Concept.</li>
-    </ul>
-
-    <h4>Para quem é</h4>
-    <p>
-      Para quem valoriza o conforto,
-      a sensação de casa bem cuidada
-      e perfumes que acompanham a rotina
-      com leveza e sofisticação.
-    </p>
-    <small> *Imagens meramente ilustrativas.</small>
-
-    <p class="seo">
-      Palavras-chave: figo caramel, difusor de varetas,
-      home spray Lucc Concept, perfume autoral,
-      aromatizador sofisticado, decoração sensorial,
-      bem-estar e elegância.
-    </p>
-  `
-},
-
-{
-  nome: "Figo Caramel — Difusor + Home Spray - 200ml",
-  tipo: "aromatizadores",
-  colecao: "Lucc Concept",
-  quantidade: "kit",
-  preco: 0, // defina o valor final
-  imagens: [
-    "imagens/dhgrfigo.png"
-  ],
-  descricao: "Difusor de varetas e home spray Figo Caramel. Um perfume envolvente, confortável e elegante para o dia a dia.",
   descricaoHtml: `
     <h3>Figo Caramel — Lucc Concept</h3>
 
@@ -366,12 +284,95 @@ const produtos = [
   `
 },
 
+{
+  nome: "Figo Caramel — Difusor + Home Spray - 350ml",
+  tipo: "aromatizadores",
+  colecao: "Lucc Concept",
+  quantidade: "kit",
+  preco: 279, 
+  imagens: [
+    "imagens/dhgrfigo.png"
+  ],
+  descricao: "Difusor de varetas e home spray Figo Caramel. Um perfume envolvente, confortável e elegante para o dia a dia.",
+  descricaoHtml: `
+    <h3>Figo Caramel — Lucc Concept</h3>
+
+    <p>
+      <strong>Figo Caramel</strong> é presença acolhedora.
+      Um perfume criado para acompanhar o cotidiano com elegância,
+      trazendo a sensação de casa bem cuidada,
+      conforto imediato e atmosfera envolvente.
+    </p>
+
+    <p>
+      A união do figo com notas adocicadas e cremosas
+      cria um perfume quente, equilibrado e sofisticado.
+      Doce na medida certa,
+      sem excessos,
+      com aquele fundo que convida a permanecer.
+    </p>
+
+    <h4>A experiência</h4>
+    <p>
+      Figo Caramel se revela aos poucos.
+      A abertura frutada é suave e elegante,
+      evoluindo para um corpo mais quente e confortável,
+      que envolve o ambiente sem saturar.
+      Um perfume fácil de amar,
+      pensado para uso diário,
+      mas com personalidade.
+    </p>
+
+    <h4>O kit</h4>
+    <p>
+      O conjunto reúne um <strong>difusor de varetas</strong>
+      e um <strong>home spray</strong>,
+      permitindo controlar a intensidade
+      e manter o ambiente sempre agradável,
+      com o mesmo perfume autoral da coleção.
+    </p>
+
+    <ul>
+      <li>Difusor de varetas com perfume Figo Caramel;</li>
+      <li>Home spray com o mesmo perfume;</li>
+      <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
+      <li>Volume: <strong>350 ml</strong> (cada item);</li>
+      <li>Perfume confortável, elegante e de alta qualidade.</li>
+    </ul>
+
+    <h4>Por que escolher Figo Caramel?</h4>
+    <ul>
+      <li>Cria atmosfera acolhedora e sofisticada;</li>
+      <li>Perfume adocicado equilibrado, nunca enjoativo;</li>
+      <li>Funciona bem em diferentes ambientes;</li>
+      <li>Ideal para quem busca elegância no cotidiano;</li>
+      <li>Qualidade autoral Lucc Concept.</li>
+    </ul>
+
+    <h4>Para quem é</h4>
+    <p>
+      Para quem valoriza o conforto,
+      a sensação de casa bem cuidada
+      e perfumes que acompanham a rotina
+      com leveza e sofisticação.
+    </p>
+    <small> *Imagens meramente ilustrativas.</small>
+
+    <p class="seo">
+      Palavras-chave: figo caramel, difusor de varetas,
+      home spray Lucc Concept, perfume autoral,
+      aromatizador sofisticado, decoração sensorial,
+      bem-estar e elegância.
+    </p>
+  `
+},
+
  {
   nome: "Rastro — Díptico Fine Art",
   tipo: "obras",
   colecao: "Rastro",
   quantidade: "kit-obras",
-  preco: 1974, // ajuste conforme sua estratégia
+  preco: 1280, 
   imagens: [
     "imagens/rastrofineart.jpg",
     "imagens/ilustração4 (2).png",
@@ -476,11 +477,11 @@ const produtos = [
 
 
  {
-  nome: "Lavanda Francesa — Difusor + Home Spray - 100ml",
+  nome: "Lavanda Francesa — Difusor + Home Spray - 200ml",
   tipo: "aromatizadores",
   colecao: "Lucc Concept",
   quantidade: "kit",
-  preco: 0, // defina o valor final
+  preco: 189, // defina o valor final
   imagens: [
     "imagens/dhpeqlav.png"
   ],
@@ -533,7 +534,7 @@ const produtos = [
       <li>Difusor de varetas com perfume Lavanda Francesa;</li>
       <li>Home spray com o mesmo perfume autoral;</li>
       <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
-      <li>Volume: <strong>100 ml</strong> (cada item);</li>
+      <li>Volume: <strong>200 ml</strong> (cada item);</li>
       <li>Perfume equilibrado, limpo e sofisticado.</li>
     </ul>
 
@@ -566,11 +567,11 @@ const produtos = [
   `
 },
 {
-  nome: "Lavanda Francesa — Difusor + Home Spray - 200ml",
+  nome: "Lavanda Francesa — Difusor + Home Spray - 350ml",
   tipo: "aromatizadores",
   colecao: "Lucc Concept",
   quantidade: "kit",
-  preco: 0, // defina o valor final
+  preco: 279, 
   imagens: [
     "imagens/dhgrlav.png"
   ],
@@ -623,7 +624,7 @@ const produtos = [
       <li>Difusor de varetas com perfume Lavanda Francesa;</li>
       <li>Home spray com o mesmo perfume autoral;</li>
       <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
-      <li>Volume: <strong>200 ml</strong> (cada item);</li>
+      <li>Volume: <strong>350 ml</strong> (cada item);</li>
       <li>Perfume equilibrado, limpo e sofisticado.</li>
     </ul>
 
@@ -659,11 +660,11 @@ const produtos = [
 
   
    {
-  nome: "Bamboo — Difusor + Home Spray - 100ml",
+  nome: "Bamboo — Difusor + Home Spray - 200ml",
   tipo: "aromatizadores",
   colecao: "Lucc Concept",
   quantidade: "kit",
-  preco: 0, // defina o valor final
+  preco: 189, // defina o valor final
   imagens: [
     "imagens/dhpeqbamboo.png"
   ],
@@ -711,7 +712,7 @@ const produtos = [
       <li>Difusor de varetas com perfume Bamboo;</li>
       <li>Home spray com o mesmo perfume autoral;</li>
       <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
-      <li>Volume: <strong>100 ml</strong> (cada item);</li>
+      <li>Volume: <strong>200 ml</strong> (cada item);</li>
       <li>Perfume verde, limpo e contemporâneo.</li>
     </ul>
 
@@ -744,11 +745,11 @@ const produtos = [
 },
 
 {
-  nome: "Bamboo — Difusor + Home Spray - 200ml",
+  nome: "Bamboo — Difusor + Home Spray - 350ml",
   tipo: "aromatizadores",
   colecao: "Lucc Concept",
   quantidade: "kit",
-  preco: 0, // defina o valor final
+  preco: 279, // defina o valor final
   imagens: [
     "imagens/dhgrbamboo.png"
   ],
@@ -796,7 +797,7 @@ const produtos = [
       <li>Difusor de varetas com perfume Bamboo;</li>
       <li>Home spray com o mesmo perfume autoral;</li>
       <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
-      <li>Volume: <strong>200 ml</strong> (cada item);</li>
+      <li>Volume: <strong>350 ml</strong> (cada item);</li>
       <li>Perfume verde, limpo e contemporâneo.</li>
     </ul>
 
@@ -832,7 +833,7 @@ const produtos = [
   tipo: "obras",
   colecao: "Autoral",
   quantidade: "obra-unica",
-  preco: 0, // defina o valor final
+  preco: 680, 
   imagens: [
     "imagens/galeria.png",
     "imagens/ilustração3.png",
@@ -898,102 +899,13 @@ const produtos = [
 },
 
 {
-  nome: "Vanilla Home — Difusor + Home Spray - 100ml",
-  tipo: "aromatizadores",
-  colecao: "Lucc Concept",
-  quantidade: "kit",
-  preco: 0, // defina o valor final
-  imagens: [
-    "imagens/dhpeqvanilla.png"
-  ],
-  descricao: "Difusor de varetas e home spray Vanilla Home. Um perfume cremoso, acolhedor e sofisticado para ambientes que pedem conforto elegante.",
-  descricaoHtml: `
-    <h3>Vanilla Home — Lucc Concept</h3>
-
-    <p>
-      <strong>Vanilla Home</strong> é conforto elevado.
-      Um perfume criado para acolher,
-      envolver
-      e transformar o ambiente em refúgio —
-      elegante, calmo e profundamente agradável.
-    </p>
-
-    <p>
-      Aqui, a baunilha aparece em sua versão mais adulta e sofisticada.
-      Nada de doçura excessiva ou notas artificiais.
-      Vanilla Home é cremosa, macia e equilibrada,
-      com fundo quente que transmite cuidado e permanência.
-    </p>
-
-    <h4>A experiência</h4>
-    <p>
-      A abertura é suave e envolvente,
-      trazendo sensação imediata de aconchego.
-      Ao evoluir, o perfume ganha corpo,
-      permanecendo no ambiente de forma confortável,
-      elegante
-      e silenciosamente marcante.
-    </p>
-
-    <p>
-      É o tipo de perfume que transforma a rotina em ritual:
-      chegar em casa,
-      fechar a porta,
-      respirar fundo.
-    </p>
-
-    <h4>O kit</h4>
-    <p>
-      O conjunto reúne um <strong>difusor de varetas</strong>
-      e um <strong>home spray</strong>,
-      permitindo controlar a intensidade do perfume
-      de acordo com o momento e o espaço.
-    </p>
-
-    <ul>
-      <li>Difusor de varetas com perfume Vanilla Home;</li>
-      <li>Home spray com o mesmo perfume autoral;</li>
-      <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
-      <li>Volume: <strong>100 ml</strong> (cada item);</li>
-      <li>Perfume cremoso, elegante e acolhedor.</li>
-    </ul>
-
-    <h4>Por que escolher Vanilla Home?</h4>
-    <ul>
-      <li>Cria sensação imediata de conforto e acolhimento;</li>
-      <li>Baunilha sofisticada, adulta e nada enjoativa;</li>
-      <li>Ideal para salas, quartos e espaços de descanso;</li>
-      <li>Perfume que permanece sem invadir;</li>
-      <li>Qualidade autoral Lucc Concept.</li>
-    </ul>
-
-    <h4>Para quem é</h4>
-    <p>
-      Para quem ama a sensação de casa bem cuidada.
-      Para quem valoriza conforto,
-      calor emocional
-      e perfumes que abraçam
-      sem excesso.
-    </p>
-    <small> *Imagens meramente ilustrativas.</small>
-
-    <p class="seo">
-      Palavras-chave: vanilla home, difusor de varetas,
-      home spray Lucc Concept, perfume de baunilha sofisticado,
-      aromatizador acolhedor, decoração sensorial,
-      bem-estar e conforto.
-    </p>
-  `
-},
-
-{
   nome: "Vanilla Home — Difusor + Home Spray - 200ml",
   tipo: "aromatizadores",
   colecao: "Lucc Concept",
   quantidade: "kit",
-  preco: 0, // defina o valor final
+  preco: 189, // defina o valor final
   imagens: [
-    "imagens/dhgrvanilla.png"
+    "imagens/dhpeqvanilla.png"
   ],
   descricao: "Difusor de varetas e home spray Vanilla Home. Um perfume cremoso, acolhedor e sofisticado para ambientes que pedem conforto elegante.",
   descricaoHtml: `
@@ -1075,33 +987,122 @@ const produtos = [
   `
 },
 
+{
+  nome: "Vanilla Home — Difusor + Home Spray - 350ml",
+  tipo: "aromatizadores",
+  colecao: "Lucc Concept",
+  quantidade: "kit",
+  preco: 279, // defina o valor final
+  imagens: [
+    "imagens/dhgrvanilla.png"
+  ],
+  descricao: "Difusor de varetas e home spray Vanilla Home. Um perfume cremoso, acolhedor e sofisticado para ambientes que pedem conforto elegante.",
+  descricaoHtml: `
+    <h3>Vanilla Home — Lucc Concept</h3>
+
+    <p>
+      <strong>Vanilla Home</strong> é conforto elevado.
+      Um perfume criado para acolher,
+      envolver
+      e transformar o ambiente em refúgio —
+      elegante, calmo e profundamente agradável.
+    </p>
+
+    <p>
+      Aqui, a baunilha aparece em sua versão mais adulta e sofisticada.
+      Nada de doçura excessiva ou notas artificiais.
+      Vanilla Home é cremosa, macia e equilibrada,
+      com fundo quente que transmite cuidado e permanência.
+    </p>
+
+    <h4>A experiência</h4>
+    <p>
+      A abertura é suave e envolvente,
+      trazendo sensação imediata de aconchego.
+      Ao evoluir, o perfume ganha corpo,
+      permanecendo no ambiente de forma confortável,
+      elegante
+      e silenciosamente marcante.
+    </p>
+
+    <p>
+      É o tipo de perfume que transforma a rotina em ritual:
+      chegar em casa,
+      fechar a porta,
+      respirar fundo.
+    </p>
+
+    <h4>O kit</h4>
+    <p>
+      O conjunto reúne um <strong>difusor de varetas</strong>
+      e um <strong>home spray</strong>,
+      permitindo controlar a intensidade do perfume
+      de acordo com o momento e o espaço.
+    </p>
+
+    <ul>
+      <li>Difusor de varetas com perfume Vanilla Home;</li>
+      <li>Home spray com o mesmo perfume autoral;</li>
+      <li>Frascos em <strong>PET</strong>, leves e funcionais;</li>
+      <li>Volume: <strong>350 ml</strong> (cada item);</li>
+      <li>Perfume cremoso, elegante e acolhedor.</li>
+    </ul>
+
+    <h4>Por que escolher Vanilla Home?</h4>
+    <ul>
+      <li>Cria sensação imediata de conforto e acolhimento;</li>
+      <li>Baunilha sofisticada, adulta e nada enjoativa;</li>
+      <li>Ideal para salas, quartos e espaços de descanso;</li>
+      <li>Perfume que permanece sem invadir;</li>
+      <li>Qualidade autoral Lucc Concept.</li>
+    </ul>
+
+    <h4>Para quem é</h4>
+    <p>
+      Para quem ama a sensação de casa bem cuidada.
+      Para quem valoriza conforto,
+      calor emocional
+      e perfumes que abraçam
+      sem excesso.
+    </p>
+    <small> *Imagens meramente ilustrativas.</small>
+
+    <p class="seo">
+      Palavras-chave: vanilla home, difusor de varetas,
+      home spray Lucc Concept, perfume de baunilha sofisticado,
+      aromatizador acolhedor, decoração sensorial,
+      bem-estar e conforto.
+    </p>
+  `
+},
+
 ];
 
 
-
-// -------------------------------
+// ================================
 // 🧱 Renderizar produtos na loja
-// -------------------------------
+// ================================
 function renderProdutos(lista = produtos) {
   const grid = document.getElementById("grid-produtos");
   if (!grid) return;
 
   grid.innerHTML = "";
+
   lista.forEach((produto) => {
     const card = document.createElement("div");
     card.classList.add("produto-card");
 
-    card.innerHTML = `
-      <img src="${produto.imagens[0]}" alt="${produto.nome}">
+    const preco = (produto.preco ?? 0);
 
+    card.innerHTML = `
+      <img src="${produto.imagens?.[0] || ""}" alt="${produto.nome || ""}">
       <div class="produto-info">
-        <h3>${produto.nome}</h3>
-        <p class="preco">R$ ${produto.preco.toFixed(2)}</p>
-        <button class="btn-comprar">Comprar</button>
+        <h3>${produto.nome || ""}</h3>
+        <p class="preco">R$ ${Number(preco).toFixed(2)}</p>
+        <button class="btn-comprar" type="button">Ver detalhes</button>
       </div>
     `;
 
-    // Adiciona ao DOM
     grid.appendChild(card);
   });
 }
@@ -1110,66 +1111,110 @@ function renderProdutos(lista = produtos) {
 renderProdutos();
 
 // ================================
-// 🛍️ CONTROLE DE MODAIS LUCC CONCEPT
+// 🖼️ Modal do Produto + Carrossel
 // ================================
-
-// Instâncias do Bootstrap Modal
-const modalProduto = new bootstrap.Modal(document.getElementById('modalProduto'));
-const modalCarrinho = new bootstrap.Modal(document.getElementById('modalCarrinho'));
-const modalCheckout = new bootstrap.Modal(document.getElementById('modalCheckout'));
-const modalConfirmacao = new bootstrap.Modal(document.getElementById('modalConfirmacao'));
-
-document.addEventListener('click', (e) => {
-  const card = e.target.closest('.produto-card');
-  if (card && !e.target.classList.contains('btn-comprar')) {
-    const nome = card.querySelector('h3').textContent;
-    const produto = produtos.find((p) => p.nome === nome);
-    if (!produto) return;
-
-    const modalImagem = document.getElementById('modalImagem');
-    let imagemIndex = 0;
-    modalImagem.src = produto.imagens[0];
-
-    // === Remove setas antigas (caso já existam) ===
-    const oldControls = document.querySelector('.carousel-controls');
-    if (oldControls) oldControls.remove();
-
-    // === Cria container das setas DENTRO do mesmo bloco da imagem ===
-    const wrapper = document.createElement('div');
-    wrapper.classList.add('carousel-wrapper');
+function ensureCarouselWrapper(modalImagem) {
+  // Evita criar wrapper infinito toda vez que abre o modal
+  let wrapper = modalImagem.closest(".carousel-wrapper");
+  if (!wrapper) {
+    wrapper = document.createElement("div");
+    wrapper.classList.add("carousel-wrapper");
     modalImagem.parentNode.insertBefore(wrapper, modalImagem);
     wrapper.appendChild(modalImagem);
-
-    const controls = document.createElement('div');
-    controls.classList.add('carousel-controls');
-    controls.innerHTML = `
-      <button id="prevImg">←</button>
-      <button id="nextImg">→</button>
-    `;
-    wrapper.appendChild(controls);
-
-    // === Transição suave (fade) ===
-    modalImagem.style.transition = "opacity 0.4s ease";
-
-    function trocarImagem(novoIndex) {
-      modalImagem.style.opacity = 0;
-      setTimeout(() => {
-        imagemIndex = (novoIndex + produto.imagens.length) % produto.imagens.length;
-        modalImagem.src = produto.imagens[imagemIndex];
-        modalImagem.style.opacity = 1;
-      }, 300);
-    }
-
-    document.getElementById('prevImg').onclick = () => trocarImagem(imagemIndex - 1);
-    document.getElementById('nextImg').onclick = () => trocarImagem(imagemIndex + 1);
-
-    // === Preenche infos ===
-    document.getElementById('modalTitulo').textContent = produto.nome;
-    document.getElementById('modalDescricao').innerHTML = produto.descricaoHtml || produto.descricao || '';
-    document.getElementById('modalPreco').textContent = `R$ ${produto.preco.toFixed(2)}`;
-    modalProduto.show();
   }
+  return wrapper;
+}
+
+function renderCarouselControls(wrapper) {
+  // Remove controles antigos
+  const oldControls = wrapper.querySelector(".carousel-controls");
+  if (oldControls) oldControls.remove();
+
+  const controls = document.createElement("div");
+  controls.classList.add("carousel-controls");
+  controls.innerHTML = `
+    <button id="prevImg" type="button">←</button>
+    <button id="nextImg" type="button">→</button>
+  `;
+  wrapper.appendChild(controls);
+
+  return controls;
+}
+
+function openProductModal(produto) {
+  const elModal = document.getElementById("modalProduto");
+  const modalImagem = document.getElementById("modalImagem");
+  const modalTitulo = document.getElementById("modalTitulo");
+  const modalDescricao = document.getElementById("modalDescricao");
+  const modalPreco = document.getElementById("modalPreco");
+  const btnComprar = document.getElementById("modalComprar");
+
+  if (!elModal || !modalImagem || !modalTitulo || !modalDescricao || !modalPreco) return;
+
+  // Bootstrap instance (seguro, mesmo se chamar várias vezes)
+  const modalProduto = bootstrap.Modal.getOrCreateInstance(elModal);
+
+  // Preenche texto
+  modalTitulo.textContent = produto.nome || "";
+  modalDescricao.innerHTML = produto.descricaoHtml || produto.descricao || "";
+  modalPreco.textContent = `R$ ${Number(produto.preco ?? 0).toFixed(2)}`;
+
+  // Botão do modal -> Mercado Livre
+  if (btnComprar) {
+    btnComprar.textContent = "Comprar no Mercado Livre";
+    btnComprar.onclick = () => {
+      if (!produto.mlUrl) {
+        alert("Falta configurar o link do Mercado Livre (mlUrl) para este produto no java.js.");
+        return;
+      }
+      window.open(produto.mlUrl, "_blank", "noopener,noreferrer");
+    };
+  }
+
+  // Carrossel
+  let imagemIndex = 0;
+  const imagens = Array.isArray(produto.imagens) ? produto.imagens : [];
+
+  modalImagem.style.transition = "opacity 0.4s ease";
+  modalImagem.src = imagens[0] || "";
+
+  const wrapper = ensureCarouselWrapper(modalImagem);
+  renderCarouselControls(wrapper);
+
+  function trocarImagem(novoIndex) {
+    if (!imagens.length) return;
+
+    modalImagem.style.opacity = 0;
+    setTimeout(() => {
+      imagemIndex = (novoIndex + imagens.length) % imagens.length;
+      modalImagem.src = imagens[imagemIndex];
+      modalImagem.style.opacity = 1;
+    }, 250);
+  }
+
+  const prevBtn = document.getElementById("prevImg");
+  const nextBtn = document.getElementById("nextImg");
+
+  if (prevBtn) prevBtn.onclick = () => trocarImagem(imagemIndex - 1);
+  if (nextBtn) nextBtn.onclick = () => trocarImagem(imagemIndex + 1);
+
+  // Abre modal
+  modalProduto.show();
+}
+
+// ================================
+// 🖱️ Clique no card OU no botão -> abre modal
+// ================================
+document.addEventListener("click", (e) => {
+  const card = e.target.closest(".produto-card");
+  if (!card) return;
+
+  const nome = card.querySelector("h3")?.textContent?.trim();
+  if (!nome) return;
+
+  const produto = produtos.find((p) => (p.nome || "").trim() === nome);
+  if (!produto) return;
+
+  // Qualquer clique no card (incluindo "Ver detalhes") abre o modal
+  openProductModal(produto);
 });
-
-
-
