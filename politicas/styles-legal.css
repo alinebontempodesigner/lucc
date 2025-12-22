@@ -1,0 +1,100 @@
+/* ==========================
+   BASE – PÁGINAS LEGAIS
+   ========================== */
+
+:root{
+  --color-bg: #fffff0;
+  --color-text: #2e2e2e;
+  --color-muted: rgba(46,46,46,0.65);
+  --color-accent: #a67c52;
+
+  --font-title: 'GFS Didot', serif;
+  --font-body: 'Raleway', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.75;
+}
+
+/* Container principal */
+.legal-page{
+  max-width: 860px;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 4rem) 1.5rem;
+}
+
+/* Cabeçalho */
+.legal-header{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.legal-kicker{
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  margin-bottom: 0.75rem;
+}
+
+.legal-header h1{
+  font-family: var(--font-title);
+  font-size: clamp(2.1rem, 4vw, 2.6rem);
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+.legal-subtitle{
+  font-style: italic;
+  color: var(--color-muted);
+}
+
+/* Conteúdo */
+.legal-content h2{
+  font-family: var(--font-title);
+  font-size: 1.35rem;
+  font-weight: 400;
+  margin: 2.5rem 0 0.75rem;
+  position: relative;
+}
+
+.legal-content h2::after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin-top: 0.4rem;
+  background: linear-gradient(90deg, var(--color-accent), transparent);
+}
+
+.legal-content p{
+  margin-bottom: 1.2rem;
+  color: var(--color-text);
+}
+
+/* Footer */
+.legal-footer{
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.legal-footer p{
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+.legal-signature{
+  margin-top: 0.75rem;
+  font-style: italic;
+}

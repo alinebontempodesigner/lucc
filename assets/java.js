@@ -216,3 +216,12 @@ document.addEventListener("DOMContentLoaded", () => {
     toggler.classList.toggle("active");
   });
 });
+
+const LUCC_WHATSAPP_PHONE = "5511995206797";
+    const msg = "Oi, Lucc Concept! ✨ Vim pelo site e quero escolher uma experiência (arte + aroma). Pode me orientar?";
+    const wa = `https://wa.me/${LUCC_WHATSAPP_PHONE}?text=${encodeURIComponent(msg)}`;
+
+    ["lc-whats-top","lc-whats-room1","lc-whats-panel","lc-whats-footer"].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.href = wa;
+    });

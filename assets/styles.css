@@ -260,7 +260,7 @@ p, li{font-family: "Raleway", "Helvetica" sans-serif;}
 
 /* Base: aplica a imagem enviada e garante camada para os overlays */
 .hero.hero-bg{
-  --hero-img: url('Background.jpg');         /* ajuste o caminho se estiver em outra pasta */
+  --hero-img: url('Artista.png');         /* ajuste o caminho se estiver em outra pasta */
   position: relative;
   isolation: isolate;                         /* separa as camadas ::before/::after */
   background: var(--hero-img) center/cover no-repeat;
@@ -273,12 +273,12 @@ p, li{font-family: "Raleway", "Helvetica" sans-serif;}
 /* Tipografia/contraste no hero */
 .hero.hero-bg h1{
   font-family: var(--font-title);
-  color: var(--color-outra);
+  color: var(--color-principal);
   text-shadow: 0 2px 10px rgba(0,0,0,.35);
 }
 .hero.hero-bg p{
   font-family: var(--font-body);
-  color: color-mix(in srgb, var(--color-outra) 92%, transparent);
+  color: color-mix(in srgb, var(--color-principal) 92%, transparent);
   text-shadow: 0 1px 6px rgba(0,0,0,.25);
 }
 .hero.hero-bg .grid-2{
@@ -325,6 +325,39 @@ p, li{font-family: "Raleway", "Helvetica" sans-serif;}
   background: radial-gradient(120% 120% at 50% 60%, transparent 0 58%, rgba(0,0,0,.45) 100%);
   pointer-events:none;
 }
+.hero-content{
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero-kicker{
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(46,46,46,0.55);
+  margin-bottom: 1.2rem;
+}
+.hero-intro{
+  font-size: 1rem;
+  color: rgba(46,46,46,0.75);
+  margin-bottom: 0.8rem;
+}
+.hero-title{
+  font-size: clamp(1.9rem, 2.6vw, 2.4rem);
+  line-height: 1.25;
+  color: var(--color-principal);
+  margin-bottom: 5rem; /* espaço grande antes dos botões */
+}
+.hero-actions{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.hero-actions a{
+  min-width: 210px;
+}
+
 
 
 /* Base do Manifesto */
@@ -509,40 +542,6 @@ p, li{font-family: "Raleway", "Helvetica" sans-serif;}
 }
 .benefit-card:hover .icon::after{opacity:1;transform:rotate(8deg)}
 
-/* ----------------------------
-   ENTERPRISE BANNER
-   - keep text structure exactly as in HTML
-   - button alone beneath texts
-   ---------------------------- */
-.enterprise-banner.style-2{
-  background: linear-gradient(135deg,var(--color-principal) 0%, #3a3a3a 50%, var(--color-secundaria) 100%);
-  color: #fff;
-  padding:2.25rem 1rem;
-  border-radius:14px;
-  max-width:1100px;margin:2.25rem auto;
-  box-shadow: 0 12px 40px rgba(0,0,0,.12);
-  position:relative;
-  overflow:hidden;
-}
-.enterprise-wrap{display:grid;gap:1rem;align-items:center}
-@media(min-width:720px){
-  .enterprise-wrap{grid-template-columns:1.2fr 1fr auto;align-items:center}
-}
-.enterprise-head h3{font-size:1.5rem;margin-bottom:.25rem;color:var(--color-neutra)}
-.enterprise-head .subtitle{color:rgba(255,255,255,.9);margin:0;font-size:1rem}
-.enterprise-banner .checklist{list-style:none;padding:0;margin:0}
-.enterprise-banner .checklist li{padding-left:1.4rem;position:relative;margin-bottom:.45rem;color:rgba(255,255,255,.95)}
-.enterprise-banner .checklist li::before{content:"✓";position:absolute;left:0;color:var(--color-secundaria);font-weight:800}
-
-/* CTA: single button below text (keeps HTML text intact) */
-.enterprise-banner .cta-area{display:flex;flex-direction:column;gap:.4rem;align-items:flex-start}
-@media(max-width:719px){.enterprise-banner .cta-area{width:100%;align-items:center}}
-.enterprise-banner .cta-area a{
-  display:inline-block;background:linear-gradient(135deg,var(--color-secundaria),var(--color-principal));
-  color:var(--white);padding:12px 30px;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.18);
-}
-.enterprise-banner .cta-area a:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(0,0,0,.22)}
-.enterprise-banner .sla{display:block;color:rgba(255,255,255,.9);font-size:.95rem;margin-top:.2rem}
 
 
 /*-----Sobre-----
@@ -1019,3 +1018,153 @@ p, li{font-family: "Raleway", "Helvetica" sans-serif;}
 
 .lc-prev { left: 20px; }
 .lc-next { right: 20px; }
+
+
+
+/* ==============================
+   HOME (Galeria Sensorial)
+   ============================== */
+
+.lc-museum-hero .container-hero{ max-width: 980px; }
+.lc-kicker{
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-size: .85rem;
+  color: color-mix(in srgb, var(--color-outra) 88%, transparent);
+  margin-bottom: .15rem;
+}
+@supports not (color: color-mix(in srgb, white, black)){
+  .lc-kicker{ color: rgba(255,255,255,.86); }
+}
+.lc-lead{
+  max-width: 70ch;
+  margin: .85rem auto 1.25rem;
+  line-height: 1.75;
+}
+.lc-whisper{
+  margin-top: 1.1rem;
+  font-style: italic;
+  color: rgba(255,255,255,.80);
+}
+
+/* Botões “Lucc” (sem vibe marketplace) */
+.lc-btn, .lc-btn-ghost{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55rem;
+  padding: 12px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 650;
+  letter-spacing: .02em;
+  transition: transform var(--t), box-shadow var(--t), background var(--t), color var(--t), border-color var(--t), opacity var(--t);
+}
+.lc-btn{
+  background: linear-gradient(135deg, var(--color-secundaria), color-mix(in srgb, var(--color-secundaria) 55%, #000));
+  color: var(--color-outra);
+  box-shadow: 0 10px 30px rgba(0,0,0,.18);
+}
+.lc-btn:hover{ transform: translateY(-2px); opacity: .96; }
+
+
+/* “Salas” */
+.lc-room{ padding: 8px 0; }
+.lc-room__title{
+  font-family: var(--font-title);
+  font-size: clamp(1.55rem, 1.1rem + 1.6vw, 2.2rem);
+  color: var(--color-neutra);
+  margin-bottom: .35rem;
+}
+.lc-room__sub{
+  color: color-mix(in srgb, var(--color-neutra) 84%, transparent);
+  margin: 0;
+  line-height: 1.7;
+}
+@supports not (color: color-mix(in srgb, white, black)){
+  .lc-room__sub{ color: rgba(255,255,240,.82); }
+}
+
+/* Painel marfim (parede de galeria) */
+.lc-room--ivory{
+  background: var(--color-neutra);
+  border-radius: var(--radius-md);
+  padding: clamp(1.25rem, 2.2vw, 2rem);
+  box-shadow: var(--shadow-2);
+}
+.lc-room--ivory .lc-room__title,
+.lc-room--ivory .lc-room__sub{ color: var(--color-principal); }
+
+.lc-cta-row{ display:flex; gap: 12px; justify-content:center; flex-wrap:wrap; }
+
+/* Pilares */
+.lc-pillars{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.lc-pillar{
+  background: rgba(255,255,255,.88);
+  border: 1px solid rgba(166,124,82,.18);
+  border-radius: 18px;
+  padding: 16px 14px;
+  box-shadow: 0 10px 24px -16px rgba(0,0,0,.18);
+}
+.lc-pillar h4{
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  color: var(--color-principal);
+  margin: 0 0 6px;
+}
+.lc-pillar p{
+  color: rgba(46,46,46,.82);
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* Identidade olfativa */
+.lc-scent-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.lc-scent-card{
+  background: rgba(255,255,240,.06);
+  border: 1px solid rgba(166,124,82,.22);
+  border-radius: 18px;
+  padding: 16px 16px 14px;
+  box-shadow: 0 10px 24px -16px rgba(0,0,0,.18);
+}
+.lc-scent-card h4{
+  font-family: var(--font-title);
+  color: var(--color-neutra);
+  margin: 0 0 10px;
+}
+.lc-bullets{
+  margin: 0;
+  padding-left: 1.1rem;
+  line-height: 1.9;
+  color: color-mix(in srgb, var(--color-neutra) 86%, transparent);
+}
+@supports not (color: color-mix(in srgb, white, black)){
+  .lc-bullets{ color: rgba(255,255,240,.84); }
+}
+
+.lc-cta-panel{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 16px 16px;
+  border-radius: 18px;
+  background: rgba(255,255,240,.06);
+  color: var(--color-outra);
+  border: 1px solid rgba(166,124,82,.25);
+}
+
+/* Responsivo */
+@media (max-width: 991.98px){
+  .lc-pillars{ grid-template-columns: 1fr; }
+  .lc-scent-grid{ grid-template-columns: 1fr; }
+  .lc-cta-panel{ flex-direction: column; align-items: flex-start; }
+}
