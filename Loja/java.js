@@ -95,7 +95,7 @@ const produtos = [
     arte sensorial, difusor de varetas luxo, home spray autoral,
     decoração sofisticada, Lucc Concept, ambientes marcantes.
   </p>`,
-  mlUrl: ""
+ 
 },
 
 {
@@ -197,7 +197,7 @@ const produtos = [
       Lucc Concept, assinatura olfativa, experiência sensorial automotiva.
     </p>
   `,
-   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
+   
 },
 
 
@@ -285,7 +285,7 @@ const produtos = [
       bem-estar e elegância.
     </p>
   `,
-   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
+   
 },
 
 {
@@ -370,7 +370,7 @@ const produtos = [
       bem-estar e elegância.
     </p>
   `,
-   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
+   
 },
 
  {
@@ -479,7 +479,7 @@ const produtos = [
       decoração sofisticada, Lucc Concept, arte com narrativa.
     </p>
   `,
-   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
+  
 },
 
 
@@ -753,7 +753,7 @@ const produtos = [
       decoração minimalista, bem-estar.
     </p>
   `,
-   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
+  
 },
 
 {
@@ -840,7 +840,7 @@ const produtos = [
       decoração minimalista, bem-estar.
     </p>
   `,
-   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
+   
 },
 {
   nome: "Quase — Obra Fine Art",
@@ -911,7 +911,7 @@ const produtos = [
       arte contemporânea, casal noir, quase beijo, Lucc Concept, arte sensorial.
     </p>
   `,
-   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
+   
 },
 
 {
@@ -1002,7 +1002,7 @@ const produtos = [
       bem-estar e conforto.
     </p>
   `,
-   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
+  
 },
 
 {
@@ -1093,7 +1093,7 @@ const produtos = [
       bem-estar e conforto.
     </p>
   `,
-   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
+   
 },
 
 ];
