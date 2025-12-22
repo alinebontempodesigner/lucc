@@ -12,18 +12,17 @@ const produtos = [
 
   {
   nome: "Coleção completa - Rastro",
-  tipo: "kit-colecao",
-  quantidade: "Rastro",
+  tipo: "colecoes",           // obras | aromatizadores | automotivo | colecoes
+  colecao: "Rastro",
+  quantidade: "diptico",     // obra-unica | diptico | kit
+  atmosfera: ["silenciosa", "intensa", "sensorial"],      // array de sensações
   preco: 1980,
-  imagens: [
-    "imagens/Sala Rastro.jpg",
+  imagens: ["imagens/Sala Rastro.jpg",
     "imagens/ilustração4 (2).png",
     "imagens/ilustração6.png",
-    "imagens/difusorhomerastro.png",
-  ],
+    "imagens/difusorhomerastro.png",],
   descricao: "Rastro nasce daquilo que permanece quando o instante passa. É o desejo de viver cercada por beleza com significado: ambientes que traduzem identidade, sensibilidade e elegância sem excesso. Uma coleção criada para quem entende que o verdadeiro luxo não se impõe: ele se revela, aos poucos, e fica.",
-    descricaoHtml: `
-  <h3>Coleção Rastro</h3>
+  descricaoHtml: `<h3>Coleção Rastro</h3>
 
   <p>
     <strong>Rastro</strong> nasce daquilo que permanece quando o instante passa.
@@ -93,16 +92,16 @@ const produtos = [
     Palavras-chave: coleção Rastro, fine art autoral, moldura branca,
     arte sensorial, difusor de varetas luxo, home spray autoral,
     decoração sofisticada, Lucc Concept, ambientes marcantes.
-  </p>
-
-  `
+  </p>`,
+  mlUrl: ""
 },
 
 {
-  nome: "Wave After Wave – Kit Assinatura Automotivo",
-  tipo: "aromatizadores",
+ nome: "Wave After Wave — Kit Automotivo",
+  tipo: "automotivo",
   colecao: "Wave After Wave",
   quantidade: "kit",
+  atmosfera: ["intensa", "sensorial"],
   preco: 369,
   badge: "Edição Limitada",
   imagens: [
@@ -195,7 +194,8 @@ const produtos = [
       tampa de cedro, perfume autoral para carro, Wave After Wave,
       Lucc Concept, assinatura olfativa, experiência sensorial automotiva.
     </p>
-  `
+  `,
+   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
 },
 
 
@@ -204,6 +204,7 @@ const produtos = [
   tipo: "aromatizadores",
   colecao: "Lucc Concept",
   quantidade: "kit",
+  atmosfera: ["acolhedora", "sensorial"],
   preco: 189, 
   imagens: [
     "imagens/dhpeqsala.png",
@@ -281,7 +282,8 @@ const produtos = [
       aromatizador sofisticado, decoração sensorial,
       bem-estar e elegância.
     </p>
-  `
+  `,
+   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
 },
 
 {
@@ -289,6 +291,7 @@ const produtos = [
   tipo: "aromatizadores",
   colecao: "Lucc Concept",
   quantidade: "kit",
+   atmosfera: ["acolhedora", "sensorial"],
   preco: 279, 
   imagens: [
     "imagens/dhgrfigo.png"
@@ -364,14 +367,16 @@ const produtos = [
       aromatizador sofisticado, decoração sensorial,
       bem-estar e elegância.
     </p>
-  `
+  `,
+   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
 },
 
  {
   nome: "Rastro — Díptico Fine Art",
   tipo: "obras",
   colecao: "Rastro",
-  quantidade: "kit-obras",
+  quantidade: "diptico",
+  atmosfera: ["silenciosa", "intensa", "sensorial"],
   preco: 1280, 
   imagens: [
     "imagens/rastrofineart.jpg",
@@ -471,7 +476,8 @@ const produtos = [
       arte autoral brasileira, moldura branca, arte sensorial,
       decoração sofisticada, Lucc Concept, arte com narrativa.
     </p>
-  `
+  `,
+   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
 },
 
 
@@ -481,6 +487,7 @@ const produtos = [
   tipo: "aromatizadores",
   colecao: "Lucc Concept",
   quantidade: "kit",
+  atmosfera: ["acolhedora", "silenciosa"],
   preco: 189, // defina o valor final
   imagens: [
     "imagens/dhpeqlav.png"
@@ -571,6 +578,7 @@ const produtos = [
   tipo: "aromatizadores",
   colecao: "Lucc Concept",
   quantidade: "kit",
+  atmosfera: ["acolhedora", "silenciosa"],
   preco: 279, 
   imagens: [
     "imagens/dhgrlav.png"
@@ -664,6 +672,7 @@ const produtos = [
   tipo: "aromatizadores",
   colecao: "Lucc Concept",
   quantidade: "kit",
+  atmosfera: ["contemporanea", "sensorial"],
   preco: 189, // defina o valor final
   imagens: [
     "imagens/dhpeqbamboo.png"
@@ -741,7 +750,8 @@ const produtos = [
       aromatizador contemporâneo, frescor elegante,
       decoração minimalista, bem-estar.
     </p>
-  `
+  `,
+   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
 },
 
 {
@@ -749,6 +759,7 @@ const produtos = [
   tipo: "aromatizadores",
   colecao: "Lucc Concept",
   quantidade: "kit",
+  atmosfera: ["contemporanea", "sensorial"],
   preco: 279, // defina o valor final
   imagens: [
     "imagens/dhgrbamboo.png"
@@ -826,13 +837,15 @@ const produtos = [
       aromatizador contemporâneo, frescor elegante,
       decoração minimalista, bem-estar.
     </p>
-  `
+  `,
+   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
 },
 {
-  nome: "QUASE — Fine Art",
+  nome: "Quase — Obra Fine Art",
   tipo: "obras",
   colecao: "Autoral",
   quantidade: "obra-unica",
+  atmosfera: ["intensa", "silenciosa"],
   preco: 680, 
   imagens: [
     "imagens/galeria.png",
@@ -895,7 +908,8 @@ const produtos = [
       Palavras-chave: obra quase, fine art noir, arte autoral brasileira,
       arte contemporânea, casal noir, quase beijo, Lucc Concept, arte sensorial.
     </p>
-  `
+  `,
+   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
 },
 
 {
@@ -903,6 +917,7 @@ const produtos = [
   tipo: "aromatizadores",
   colecao: "Lucc Concept",
   quantidade: "kit",
+  atmosfera: ["acolhedora", "sensorial"],
   preco: 189, // defina o valor final
   imagens: [
     "imagens/dhpeqvanilla.png"
@@ -984,7 +999,8 @@ const produtos = [
       aromatizador acolhedor, decoração sensorial,
       bem-estar e conforto.
     </p>
-  `
+  `,
+   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
 },
 
 {
@@ -992,6 +1008,7 @@ const produtos = [
   tipo: "aromatizadores",
   colecao: "Lucc Concept",
   quantidade: "kit",
+  atmosfera: ["acolhedora", "sensorial"],
   preco: 279, // defina o valor final
   imagens: [
     "imagens/dhgrvanilla.png"
@@ -1073,10 +1090,158 @@ const produtos = [
       aromatizador acolhedor, decoração sensorial,
       bem-estar e conforto.
     </p>
-  `
+  `,
+   mlUrl: "https://produto.mercadolivre.com.br/SEU-LINK"
 },
 
 ];
+
+// ================================
+// 🔎 FILTROS (HTML novo) + ORDENAR
+// ================================
+
+// Mapeia o select "Tipo de experiência" para os valores do seu produto.tipo
+// Ajuste aqui se você usar nomes diferentes no seu cadastro.
+function matchExperiencia(produto, experiencia) {
+  if (!experiencia) return true;
+
+  const tipo = (produto.tipo || "").toLowerCase();
+
+  if (experiencia === "arte") return tipo === "obras";
+  if (experiencia === "ambiente") return tipo === "aromatizadores";
+  if (experiencia === "carro") return tipo === "automotivo";
+  if (experiencia === "colecao") return tipo === "colecoes" || tipo === "kit-colecao" || tipo === "colecoes-completas";
+
+  return true;
+}
+
+// Mapeia o select "Formato" para produto.quantidade (ou outra chave que você use)
+function matchFormato(produto, formato) {
+  if (!formato) return true;
+
+  const q = (produto.quantidade || "").toLowerCase();
+
+  if (formato === "obra-unica") return q.includes("obra") && (q.includes("unica") || q.includes("individual"));
+  if (formato === "diptico") return q.includes("diptico") || q.includes("kit-obras") || q.includes("díptico");
+  if (formato === "kit") return q.includes("kit");
+
+  return true;
+}
+
+// Atmosfera é opcional: se o produto não tiver, ele só passa quando o filtro estiver vazio
+function matchAtmosfera(produto, atmosfera) {
+  if (!atmosfera) return true;
+
+  const arr = Array.isArray(produto.atmosfera)
+    ? produto.atmosfera.map((x) => String(x).toLowerCase())
+    : [];
+
+  return arr.includes(atmosfera.toLowerCase());
+}
+
+function matchColecao(produto, colecao) {
+  if (!colecao) return true;
+  return String(produto.colecao || "").toLowerCase() === String(colecao).toLowerCase();
+}
+
+function matchBusca(produto, termo) {
+  if (!termo) return true;
+  const t = termo.toLowerCase();
+
+  const nome = String(produto.nome || "").toLowerCase();
+  const colecao = String(produto.colecao || "").toLowerCase();
+  const desc = String(produto.descricao || "").toLowerCase();
+
+  return nome.includes(t) || colecao.includes(t) || desc.includes(t);
+}
+
+function matchFaixaValor(produto, faixa) {
+  if (!faixa) return true;
+
+  const p = Number(produto.preco ?? 0);
+
+  if (faixa === "ate-300") return p > 0 && p <= 300;
+  if (faixa === "ate-700") return p > 0 && p <= 700;
+  if (faixa === "ate-1500") return p > 0 && p <= 1500;
+  if (faixa === "especiais") return p > 1500; // coleções especiais acima de 1500
+
+  return true;
+}
+
+function ordenarLista(lista, modo) {
+  const arr = [...lista];
+
+  if (modo === "maior-preco") {
+    arr.sort((a, b) => Number(b.preco ?? 0) - Number(a.preco ?? 0));
+    return arr;
+  }
+
+  if (modo === "recentes") {
+    // Se você tiver data em algum produto (ex: produto.data = "2025-12-21"),
+    // ele ordena por ela. Se não tiver, mantém a ordem original.
+    const temData = arr.some((p) => p.data);
+    if (!temData) return arr;
+
+    arr.sort((a, b) => new Date(b.data) - new Date(a.data));
+    return arr;
+  }
+
+  // relevancia: mantém a ordem do cadastro
+  return arr;
+}
+
+function aplicarFiltros() {
+  const termo = document.getElementById("busca")?.value?.trim() || "";
+  const experiencia = document.getElementById("experiencia")?.value || "";
+  const colecao = document.getElementById("colecao")?.value || "";
+  const atmosfera = document.getElementById("atmosfera")?.value || "";
+  const formato = document.getElementById("formato")?.value || "";
+  const faixaValor = document.getElementById("faixaValor")?.value || "";
+  const ordenar = document.getElementById("ordenar")?.value || "relevancia";
+
+  let filtrados = produtos.filter((p) => {
+    return (
+      matchBusca(p, termo) &&
+      matchExperiencia(p, experiencia) &&
+      matchColecao(p, colecao) &&
+      matchAtmosfera(p, atmosfera) &&
+      matchFormato(p, formato) &&
+      matchFaixaValor(p, faixaValor)
+    );
+  });
+
+  filtrados = ordenarLista(filtrados, ordenar);
+
+  // Renderiza com sua função existente
+  renderProdutos(filtrados);
+
+  // (Opcional) rolar até a loja após aplicar
+  // document.getElementById("loja")?.scrollIntoView({ behavior: "smooth" });
+}
+
+function limparFiltros() {
+  const ids = ["busca", "experiencia", "colecao", "atmosfera", "formato", "faixaValor", "ordenar"];
+  ids.forEach((id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    if (id === "ordenar") el.value = "relevancia";
+    else el.value = "";
+  });
+
+  renderProdutos(produtos);
+}
+
+// Listeners
+document.getElementById("aplicarFiltros")?.addEventListener("click", aplicarFiltros);
+document.getElementById("limparFiltros")?.addEventListener("click", limparFiltros);
+
+// Busca “ao digitar” e selects “ao mudar”
+document.getElementById("busca")?.addEventListener("input", aplicarFiltros);
+
+["experiencia", "colecao", "atmosfera", "formato", "faixaValor", "ordenar"].forEach((id) => {
+  document.getElementById(id)?.addEventListener("change", aplicarFiltros);
+});
 
 
 // ================================

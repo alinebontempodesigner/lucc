@@ -57,60 +57,99 @@
 </header>
 
 
-<section class="filtros">
+<section class="filtros" aria-label="Filtros da loja">
   <div class="filtro-container">
+
     <!-- Busca -->
     <div class="filtro-item">
-      <label for="busca">Buscar produto</label>
-      <input type="text" id="busca" placeholder="Digite o nome do produto...">
+      <label for="busca">Buscar</label>
+      <input type="text" id="busca" placeholder="Digite o nome (ex: Rastro, Quase, Bamboo)">
     </div>
 
-    <!-- Tipo de Produto -->
+    <!-- Tipo de experiência -->
     <div class="filtro-item">
-      <label for="tipo">Tipo</label>
-      <select id="tipo">
-        <option value="">Todos</option>
-        <option value="difusores">Difusores</option>
-        <option value="home-spray">Home Spray</option>
-        <option value="obras">Obras de Arte</option>
-        <option value="colecao">Coleção</option>
+      <label for="experiencia">Tipo de experiência</label>
+      <select id="experiencia">
+        <option value="">Todas</option>
+        <option value="arte">Arte para contemplar</option>
+        <option value="ambiente">Perfume para ambientes</option>
+        <option value="carro">Perfume para carro</option>
+        <option value="colecao">Coleções completas</option>
       </select>
     </div>
 
-    <!-- Quantidade -->
+    <!-- Coleção -->
     <div class="filtro-item">
-      <label for="quantidade">Quantidade</label>
-      <select id="quantidade">
-        <option value="">Todos</option>
-        <option value="kits">Kits</option>
-        <option value="peca-unica">Peça Única</option>
+      <label for="colecao">Coleção</label>
+      <select id="colecao">
+        <option value="">Todas</option>
+        <option value="Rastro">Rastro</option>
+        <option value="Wave After Wave">Wave After Wave</option>
+        <option value="Lucc Concept">Lucc Concept</option>
+        <option value="Autoral">Autoral</option>
       </select>
     </div>
 
-    <!-- Faixa de Preço -->
-    <div class="filtro-item faixa-preco">
-      <label>Preço</label>
-      <input type="range" min="50" max="1000" step="10" value="500" id="preco">
-      <span id="valor-preco">Até R$ 500</span>
+    <!-- Atmosfera -->
+    <div class="filtro-item">
+      <label for="atmosfera">Atmosfera</label>
+      <select id="atmosfera">
+        <option value="">Todas</option>
+        <option value="acolhedora">Acolhedora</option>
+        <option value="contemporanea">Contemporânea</option>
+        <option value="silenciosa">Silenciosa</option>
+        <option value="intensa">Intensa</option>
+        <option value="sensorial">Sensorial</option>
+      </select>
+    </div>
+
+    <!-- Formato -->
+    <div class="filtro-item">
+      <label for="formato">Formato</label>
+      <select id="formato">
+        <option value="">Todos</option>
+        <option value="obra-unica">Obra única</option>
+        <option value="diptico">Díptico</option>
+        <option value="kit">Kit</option>
+      </select>
+    </div>
+
+    <!-- Faixa de valor -->
+    <div class="filtro-item">
+      <label for="faixaValor">Faixa de valor</label>
+      <select id="faixaValor">
+        <option value="">Todas</option>
+        <option value="ate-300">Até R$ 300</option>
+        <option value="ate-700">Até R$ 700</option>
+        <option value="ate-1500">Até R$ 1.500</option>
+        <option value="especiais">Coleções especiais</option>
+      </select>
     </div>
 
     <!-- Ordenação -->
     <div class="filtro-item">
       <label for="ordenar">Ordenar por</label>
       <select id="ordenar">
-        <option value="relevantes">Mais relevantes</option>
-        <option value="novos">Mais novos</option>
-        <option value="maior-preco">Maior preço</option>
-        <option value="menor-preco">Menor preço</option>
+        <option value="relevancia">Relevância</option>
+        <option value="recentes">Mais recentes</option>
+        <option value="maior-preco">Maior valor</option>
       </select>
     </div>
 
-    <!-- Botão Aplicar -->
+    <!-- Botões -->
     <div class="filtro-item aplicar">
-      <button class="btn-aplicar">Aplicar filtros</button>
+      <label style="opacity:0; user-select:none;">Ações</label>
+      <button id="aplicarFiltros" class="btn-aplicar" type="button">Aplicar</button>
     </div>
+
+    <div class="filtro-item aplicar">
+      <label style="opacity:0; user-select:none;">Ações</label>
+      <button id="limparFiltros" class="btn-aplicar" type="button">Limpar</button>
+    </div>
+
   </div>
 </section>
+
 
 
 
