@@ -8,6 +8,8 @@ const precoInput = document.getElementById('preco');
 const valorPreco = document.getElementById('valor-preco');
 
 // ====== PRODUTOS ======
+const LUCC_WHATSAPP_PHONE = "5511995206797"; // troque pelo seu número (DDI+DDD+numero, só dígitos)
+
 const produtos = [
 
   {
@@ -1324,17 +1326,26 @@ function openProductModal(produto) {
   modalDescricao.innerHTML = produto.descricaoHtml || produto.descricao || "";
   modalPreco.textContent = `R$ ${Number(produto.preco ?? 0).toFixed(2)}`;
 
-  // Botão do modal -> Mercado Livre
-  if (btnComprar) {
-    btnComprar.textContent = "Comprar no Mercado Livre";
-    btnComprar.onclick = () => {
-      if (!produto.mlUrl) {
-        alert("Falta configurar o link do Mercado Livre (mlUrl) para este produto no java.js.");
-        return;
-      }
-      window.open(produto.mlUrl, "_blank", "noopener,noreferrer");
-    };
+  // Botões do modal -> WhatsApp (topo e final)
+  const btnWhatsTop = document.getElementById("modalWhatsTop");
+
+  function buildWhatsUrl() {
+    const msg = `Oi, Lucc Concept! ✨
+Quero viver essa experiência: ${produto.nome}.
+Pode me orientar na compra e no envio?`;
+    return `https://wa.me/${LUCC_WHATSAPP_PHONE}?text=${encodeURIComponent(msg)}`;
   }
+
+  function bindWhatsButton(btn) {
+    if (!btn) return;
+    btn.onclick = () => window.open(buildWhatsUrl(), "_blank", "noopener,noreferrer");
+  }
+
+  if (btnComprar) {
+    btnComprar.textContent = "Falar com a artista";
+    bindWhatsButton(btnComprar);
+  }
+  bindWhatsButton(btnWhatsTop);
 
   // Carrossel
   let imagemIndex = 0;

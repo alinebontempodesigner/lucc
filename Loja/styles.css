@@ -740,3 +740,86 @@ p, li{font-family: "Raleway", "Helvetica" sans-serif;}
     margin-bottom: 1rem;
   }
 }
+
+
+/* ============================== */
+/* ✨ Modal: botão perto da imagem */
+/* ============================== */
+.produto-modal{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.modal-media{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-media .modal-img{
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+@media (max-width: 992px){
+  .produto-modal{
+    grid-template-columns: 1fr;
+  }
+  .modal-media{
+    align-items: stretch;
+  }
+}
+
+/* ============================== */
+/* ✨ Assinatura Whats (Modal) */
+/* ============================== */
+.assinatura-whats{
+  width: 100%;
+  border: 1px solid rgba(166,124,82,.28);
+  border-radius: 16px;
+  padding: 14px 14px 12px;
+  background: linear-gradient(180deg, rgba(255,255,240,.75), rgba(255,255,240,.45));
+}
+
+.assinatura-titulo{
+  margin: 0 0 6px;
+  letter-spacing: .02em;
+  color: #2e2e2e;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.assinatura-sub{
+  margin: 0 0 10px;
+  color: rgba(46,46,46,.78);
+  line-height: 1.6;
+  font-size: .95rem;
+}
+
+.assinatura-marca{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 10px 0 10px;
+}
+
+.assinatura-marca strong{
+  letter-spacing: .04em;
+  font-size: 1.05rem;
+}
+
+.assinatura-marca span{
+  color: rgba(46,46,46,.72);
+  font-size: .9rem;
+}
+
+.assinatura-frase{
+  margin: 0;
+  color: rgba(46,46,46,.85);
+  font-style: italic;
+  font-size: .95rem;
+}
