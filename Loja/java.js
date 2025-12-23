@@ -18,7 +18,7 @@ const produtos = [
   colecao: "Rastro",
   quantidade: "diptico",     // obra-unica | diptico | kit
   atmosfera: ["silenciosa", "intensa", "sensorial"],      // array de sensações
-  preco: 1980,
+  preco: 697,
   imagens: ["imagens/Sala Rastro.jpg",
     "imagens/ilustração4 (2).png",
     "imagens/ilustração6.png",
@@ -104,11 +104,12 @@ const produtos = [
   colecao: "Wave After Wave",
   quantidade: "kit",
   atmosfera: ["intensa", "sensorial"],
-  preco: 369,
+  preco: 187,
   badge: "Edição Limitada",
   imagens: [
     "imagens/wawcarro1.png",
     "imagens/wawcarro2.png",
+    "imagens/perfil Sensorial.png"
   ],
   descricao: "Kit automotivo premium com perfume autoral exclusivo e difusor com tampa de cedro. Uma assinatura olfativa que transforma o interior do carro em experiência.",
   descricaoHtml: `
@@ -207,10 +208,11 @@ const produtos = [
   colecao: "Lucc Concept",
   quantidade: "kit",
   atmosfera: ["acolhedora", "sensorial"],
-  preco: 189, 
+  preco: 169, 
   imagens: [
     "imagens/dhpeqsala.png",
     "imagens/dhpeq.png",
+    "imagens/figocaramel.png"
   ],
   descricao: "Difusor de varetas e home spray Figo Caramel. Um perfume envolvente, confortável e elegante para o dia a dia.",
   
@@ -294,9 +296,10 @@ const produtos = [
   colecao: "Lucc Concept",
   quantidade: "kit",
    atmosfera: ["acolhedora", "sensorial"],
-  preco: 279, 
+  preco: 247, 
   imagens: [
-    "imagens/dhgrfigo.png"
+    "imagens/dhgrfigo.png",
+    "imagens/figocaramel.png"
   ],
   descricao: "Difusor de varetas e home spray Figo Caramel. Um perfume envolvente, confortável e elegante para o dia a dia.",
   descricaoHtml: `
@@ -379,7 +382,7 @@ const produtos = [
   colecao: "Rastro",
   quantidade: "diptico",
   atmosfera: ["silenciosa", "intensa", "sensorial"],
-  preco: 1280, 
+  preco: 497, 
   imagens: [
     "imagens/rastrofineart.jpg",
     "imagens/ilustração4 (2).png",
@@ -490,9 +493,10 @@ const produtos = [
   colecao: "Lucc Concept",
   quantidade: "kit",
   atmosfera: ["acolhedora", "silenciosa"],
-  preco: 189, // defina o valor final
+  preco: 169, // defina o valor final
   imagens: [
-    "imagens/dhpeqlav.png"
+    "imagens/dhpeqlav.png",
+    "imagens/lavandafrancesa.png"
   ],
   descricao: "Difusor de varetas e home spray Lavanda Francesa. Um perfume elegante, limpo e sofisticado para ambientes que pedem calma e equilíbrio.",
   descricaoHtml: `
@@ -581,9 +585,10 @@ const produtos = [
   colecao: "Lucc Concept",
   quantidade: "kit",
   atmosfera: ["acolhedora", "silenciosa"],
-  preco: 279, 
+  preco: 247, 
   imagens: [
-    "imagens/dhgrlav.png"
+    "imagens/dhgrlav.png",
+    "imagens/lavandafrancesa.png"
   ],
   descricao: "Difusor de varetas e home spray Lavanda Francesa. Um perfume elegante, limpo e sofisticado para ambientes que pedem calma e equilíbrio.",
   descricaoHtml: `
@@ -675,9 +680,10 @@ const produtos = [
   colecao: "Lucc Concept",
   quantidade: "kit",
   atmosfera: ["contemporanea", "sensorial"],
-  preco: 189, // defina o valor final
+  preco: 169, // defina o valor final
   imagens: [
-    "imagens/dhpeqbamboo.png"
+    "imagens/dhpeqbamboo.png",
+    "imagens/bamboo.png"
   ],
   descricao: "Difusor de varetas e home spray Bamboo. Um perfume verde, limpo e contemporâneo para ambientes que pedem frescor elegante.",
   descricaoHtml: `
@@ -762,9 +768,10 @@ const produtos = [
   colecao: "Lucc Concept",
   quantidade: "kit",
   atmosfera: ["contemporanea", "sensorial"],
-  preco: 279, // defina o valor final
+  preco: 247, // defina o valor final
   imagens: [
-    "imagens/dhgrbamboo.png"
+    "imagens/dhgrbamboo.png",
+    "imagens/bamboo.png"
   ],
   descricao: "Difusor de varetas e home spray Bamboo. Um perfume verde, limpo e contemporâneo para ambientes que pedem frescor elegante.",
   descricaoHtml: `
@@ -848,7 +855,7 @@ const produtos = [
   colecao: "Autoral",
   quantidade: "obra-unica",
   atmosfera: ["intensa", "silenciosa"],
-  preco: 680, 
+  preco: 247, 
   imagens: [
     "imagens/galeria.png",
     "imagens/ilustração3.png",
@@ -920,9 +927,10 @@ const produtos = [
   colecao: "Lucc Concept",
   quantidade: "kit",
   atmosfera: ["acolhedora", "sensorial"],
-  preco: 189, // defina o valor final
+  preco: 169, // defina o valor final
   imagens: [
-    "imagens/dhpeqvanilla.png"
+    "imagens/dhpeqvanilla.png",
+    "imagens/vanillahome.png"
   ],
   descricao: "Difusor de varetas e home spray Vanilla Home. Um perfume cremoso, acolhedor e sofisticado para ambientes que pedem conforto elegante.",
   descricaoHtml: `
@@ -1011,9 +1019,10 @@ const produtos = [
   colecao: "Lucc Concept",
   quantidade: "kit",
   atmosfera: ["acolhedora", "sensorial"],
-  preco: 279, // defina o valor final
+  preco: 247, // defina o valor final
   imagens: [
-    "imagens/dhgrvanilla.png"
+    "imagens/dhgrvanilla.png",
+    "imagens/vanillahome.png"
   ],
   descricao: "Difusor de varetas e home spray Vanilla Home. Um perfume cremoso, acolhedor e sofisticado para ambientes que pedem conforto elegante.",
   descricaoHtml: `

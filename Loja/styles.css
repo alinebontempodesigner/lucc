@@ -823,3 +823,6 @@ p, li{font-family: "Raleway", "Helvetica" sans-serif;}
   font-style: italic;
   font-size: .95rem;
 }
+.lc-size-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem}
+.lc-size-btn{padding:.6rem .7rem;border:1px solid rgba(0,0,0,.15);border-radius:.8rem;background:#fff;cursor:pointer}
+.lc-size-btn.is-active{border-color:#a67c52;box-shadow:0 0 0 2px rgba(166,124,82,.15)}
